@@ -1,6 +1,6 @@
 baseURL: "https://MayankD409.github.io/"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Mayank Deshpande"
 theme: hugo-profile
 publishDir: "docs"
 
