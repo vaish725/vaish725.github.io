@@ -9599,7 +9599,7 @@ const About = () => {
     className: "numbered-heading"
   }, "About Me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "inner"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledText, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes \u2014 turns out hacking together a custom reblog button taught me a lot about HTML & CSS!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Fast-forward to today, and I\u2019ve had the privilege of working at", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledText, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hello! My name is Mayank and I love to code!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Fast-forward to today, and I\u2019ve had the privilege of working at", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "https://us.mullenlowe.com/"
   }, "an advertising agency"), ",", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "https://starry.com/"
@@ -50834,7 +50834,7 @@ module.exports = [];
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"data":{"site":{"siteMetadata":{"defaultTitle":"Brittany Chiang","defaultDescription":"Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.","siteUrl":"https://brittanychiang.com","defaultImage":"/og.png","twitterUsername":"@bchiang7"}}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"data":{"site":{"siteMetadata":{"defaultTitle":"Mayank Deshpande","defaultDescription":"Mayank is a Roboticist focusing on Computer Vision and AI.","siteUrl":"https://MayankD409.github.io","defaultImage":"/og.png","twitterUsername":"@Mayank_D04"}}}}');
 
 /***/ }),
 
