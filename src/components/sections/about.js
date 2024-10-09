@@ -22,7 +22,7 @@ const StyledText = styled.div`
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
+    // grid-gap: 0 10px; // Lynn does not have this
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
@@ -36,7 +36,7 @@ const StyledText = styled.div`
       font-size: var(--fz-xs);
 
       &:before {
-        content: '▹';
+        content: '❖';
         position: absolute;
         left: 0;
         color: var(--green);
@@ -65,6 +65,16 @@ const StyledPic = styled.div`
 
     &:hover,
     &:focus {
+      // background: transparent;
+      // outline: 0;
+
+      // &:after {
+      //   top: 15px;
+      //   left: 15px;
+      // }
+
+      // Lynn used above hover settings
+
       outline: 0;
       transform: translate(-4px, -4px);
 
@@ -81,8 +91,8 @@ const StyledPic = styled.div`
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
+      // mix-blend-mode: multiply; // Adds bluish tint to the picture
+      filter: grayscale(100%) contrast(1); // Makes image grayscale pre-hover
       transition: var(--transition);
     }
 
@@ -106,8 +116,8 @@ const StyledPic = styled.div`
 
     &:after {
       border: 2px solid var(--green);
-      top: 14px;
-      left: 14px;
+      top: 20px;
+      left: 20px;
       z-index: -1;
     }
   }
@@ -125,7 +135,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['Winning', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>

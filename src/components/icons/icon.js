@@ -47,6 +47,8 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'Medium':
+      return <FontAwesomeIcon icon={faMedium} />;
     default:
       return <IconExternal />;
   }

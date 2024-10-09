@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Mayank Deshpande',
     description:
-      'Mayank is a Roboticist focusing on Computer Vision and AI.',
+      'Mayank is a Robotics Software Engineer with interests in Computer Vision, Perception and AI.',
     siteUrl: 'https://MayankD409.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@Mayank_D04',
