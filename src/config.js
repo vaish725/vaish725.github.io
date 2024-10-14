@@ -1,26 +1,28 @@
+// VISITED AND EDITED BUT ONE THING REMAINING TO REMOVE CODEPEN
+
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'msdeshp4@umd.edu',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/MayankD409',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.instagram.com/_mayankdeshpande_/',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://x.com/Mayank_D04',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
+      url: 'https://www.linkedin.com/in/msdeshpande04/',
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://codepen.io/bchiang7', //remove this
     },
   ],
 
