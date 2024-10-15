@@ -1,4 +1,4 @@
-// VISITED AND EDITED BUT ONE THING REMAINING TO REMOVE CODEPEN
+// VISITED BUT PLAY AROUND WITH THIS
 
 module.exports = {
   email: 'msdeshp4@umd.edu',

@@ -1,3 +1,4 @@
+// VISITED AND VERIFIED
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -49,7 +50,7 @@ const Social = ({ isHome }) => (
       {socialMedia &&
         socialMedia.map(({ url, name }, i) => (
           <li key={i}>
-            <a href={url} aria-label={name} target="_blank" rel="noreferrer">
+            <a href={url} aria-label={name} target="_blank" rel="noopener noreferrer">
               <Icon name={name} />
             </a>
           </li>

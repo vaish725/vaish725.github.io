@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
+import { email } from '@config';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -30,14 +31,15 @@ const StyledHeroSection = styled.section`
   }
 
   h3 {
-    margin-top: 5px;
+    margin-top: 10px;
     color: var(--slate);
+    font-size: clamp(30px, 7vw, 70px);
     line-height: 0.9;
   }
 
   p {
     margin: 20px 0 0;
-    max-width: 540px;
+    max-width: 570px;
   }
 
   .email-link {
@@ -65,23 +67,26 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+        I’m a <strong>Robotics Software Engineer</strong> specializing in specializing in <strong>Perception and Planning</strong> for Robots.
+      </p>
+
+      <p>
+        My expertise spans <strong>Computer Vision</strong>, <strong>Robot Perception</strong>, <strong>Reinforcement Learning</strong>, and <strong>Multimodal AI</strong>.
+      </p>
+
+      <p>
+        Currently, looking for full-time roles in robotics and computer vision starting June 2025.
+        Do{' '}
+        <a href="#contact">
+          Reach Out 
         </a>
-        .
+        {' '}if you think I'd make a good fit for your organization!
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my course!
+    <a href="/resume.pdf" className="email-link" target="_blank" rel="noopener noreferrer">
+      My Resume
     </a>
   );
 

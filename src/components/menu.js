@@ -1,3 +1,4 @@
+// VISITED AND VERIFIED
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';

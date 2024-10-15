@@ -153,7 +153,7 @@ const ArchivePage = ({ location, data }) => {
       <main>
         <header ref={revealTitle}>
           <h1 className="big-heading">Archive</h1>
-          <p className="subtitle">A big list of things I’ve worked on</p>
+          <p className="subtitle">A big list of projects I’ve worked on</p>
         </header>
 
         <StyledTableContainer ref={revealTable}>
@@ -191,7 +191,7 @@ const ArchivePage = ({ location, data }) => {
                       </td>
 
                       <td className="tech hide-on-mobile">
-                        {tech?.length > 0 &&
+                        {tech?.length > 0 && // LYNN DOES NOT HAVE ? AHEAD OF TECH
                           tech.map((item, i) => (
                             <span key={i}>
                               {item}
@@ -241,7 +241,7 @@ ArchivePage.propTypes = {
 };
 
 export default ArchivePage;
-
+// Lynn has fileAbsolutePath: { regex: "/projects/" } on line 248
 export const pageQuery = graphql`
   {
     allMarkdownRemark(

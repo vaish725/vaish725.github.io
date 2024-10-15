@@ -1,3 +1,4 @@
+// VISITED AND VERIFIED
 import { useEffect } from 'react';
 
 // https://usehooks.com/useOnClickOutside/

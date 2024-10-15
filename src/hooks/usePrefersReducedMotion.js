@@ -1,3 +1,4 @@
+// VISITED AND VERIFIED
 /**
  * https://www.joshwcomeau.com/snippets/react-hooks/use-prefers-reduced-motion/
  */

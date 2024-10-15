@@ -1,3 +1,4 @@
+// VISITED BUT PLAY AROUND WITH THIS
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
@@ -207,7 +208,7 @@ PensievePage.propTypes = {
 };
 
 export default PensievePage;
-
+// Lynn does not have Line 214
 export const pageQuery = graphql`
   {
     allMarkdownRemark(

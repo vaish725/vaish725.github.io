@@ -1,3 +1,4 @@
+// VISITED AND VERIFIED
 import ScrollReveal from 'scrollreveal';
 
 const isSSR = typeof window === 'undefined';

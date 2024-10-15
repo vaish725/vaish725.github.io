@@ -1,3 +1,4 @@
+// VISITED BUT PLAY AROUND WITH THIS
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
@@ -52,12 +53,12 @@ const StyledHeader = styled.header`
       `};
   }
 `;
-
+// SIZE OF LOGO ON LINE 70 & 71
 const StyledNav = styled.nav`
   ${({ theme }) => theme.mixins.flexBetween};
   position: relative;
   width: 100%;
-  color: var(--lightest-slate);
+  color: var(--white);
   font-family: var(--font-mono);
   counter-reset: item 0;
   z-index: 12;
@@ -67,8 +68,8 @@ const StyledNav = styled.nav`
 
     a {
       color: var(--green);
-      width: 42px;
-      height: 42px;
+      width: 48px;
+      height: 48px; 
       position: relative;
       z-index: 1;
 

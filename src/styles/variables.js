@@ -1,24 +1,25 @@
+// VISITED BUT PLAY AROUND WITH THIS
 import { css } from 'styled-components';
 
 const variables = css`
   :root {
     --dark-navy: #020c1b;
-    --navy: #0a192f;
-    --light-navy: #112240;
-    --lightest-navy: #233554;
+    --navy: #eae1dc; //Initially it was #0a192f;
+    --light-navy: #f0eae7; //#112240;
+    --lightest-navy: #f7f3f1; //#233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-slate: #495670;
-    --slate: #8892b0;
-    --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
+    --slate: #8e8d8a; //#8892b0;
+    --light-slate: #72716e; //#a8b2d1;
+    --lightest-slate: #474745; //#ccd6f6;
     --white: #e6f1ff;
-    --green: #64ffda;
-    --green-tint: rgba(100, 255, 218, 0.1);
-    --pink: #f57dff;
-    --blue: #57cbff;
+    --green: #e85a4f; //#64ffda;
+    --green-tint-dark: #8b362f; //Lynn added this line extra
+    --green-tint: #f6bdb9; //rgba(100, 255, 218, 0.1);
+    // --pink: #f57dff; //Lynn removed these
+    // --blue: #57cbff; //Lynn removed these
 
-    --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
-      sans-serif;
+    --font-sans: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif; // Lynn removed 'Inter',
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
     --fz-xxs: 12px;
@@ -30,7 +31,7 @@ const variables = css`
     --fz-xxl: 22px;
     --fz-heading: 32px;
 
-    --border-radius: 4px;
+    --border-radius: 8px; // Default it was 4px
     --nav-height: 100px;
     --nav-scroll-height: 70px;
 

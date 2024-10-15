@@ -1,3 +1,4 @@
+// VISITED BUT PLAY AROUND WITH THIS
 import React, { useEffect, useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
@@ -92,7 +93,7 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       // mix-blend-mode: multiply; // Adds bluish tint to the picture
-      filter: grayscale(100%) contrast(1); // Makes image grayscale pre-hover
+      // filter: grayscale(100%) contrast(1); // Makes image grayscale pre-hover
       transition: var(--transition);
     }
 
@@ -135,7 +136,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Winning', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['Computer Vision', 'Robot Perception', 'Reinforcement Learning', 'Multimodal AI', 'C++', 'MATLAB'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -143,33 +144,24 @@ const About = () => {
 
       <div className="inner">
         <StyledText>
-          <div>
-            <p>
-              Hello! My name is Mayank and I love to code!!
-            </p>
+        <div>
+          <p>
+            Hello! <span role="img" aria-label="waving hand">👋</span> I'm <strong>Mayank</strong>, a <strong>Master's student in Robotics</strong> at the <strong>University of Maryland, College Park</strong>.
+          </p>
 
-            <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
+          <p>
+            Throughout my journey, I've had the opportunity to work as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, where I enhanced multi-agent path planning and optimized navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I developed a novel deep learning architecture that improved autonomous navigation in crowded environments. Currently, as an <strong>Intern at Intuitive Surgical</strong>, I'm working on implementing Optical Flow solutions to verify and ensure intuitive driving for clinician during surgical procedures.
+          </p>
 
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
+          <p>
+              When I'm not immersed in robotics, I enjoy <strong>playing football</strong>, <strong>catching movies</strong>, and <strong>gaming with friends</strong>. My recent internship in California ignited a passion for <strong>hiking</strong>, and I love embarking on quick hikes whenever I get the chance. I'm also an avid reader of <strong>Finance books</strong> and could spend hours discussing <strong>investment strategies</strong>, <strong>personal finance</strong>, the <strong>stock market</strong>, and <strong>global economics</strong>.
+          </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
-          </div>
+          <p>
+            I'm passionate about contributing to technologies that <strong>shape the future</strong> and <strong>enhance lives</strong> through innovative robotics solutions.
+          </p>
+        </div>
+
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
@@ -180,7 +172,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/ups-shot.jpg" //either me.jpg or ups-shot.jpg
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

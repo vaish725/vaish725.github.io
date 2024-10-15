@@ -1,3 +1,4 @@
+// VISITED AND VERIFIED
 import { css } from 'styled-components';
 
 const prismColors = {
@@ -22,7 +23,7 @@ const PrismStyles = css`
   */
   .gatsby-highlight {
     background-color: ${prismColors.bg};
-    color: ${prismColors.grey};
+    color: ${prismColors.variable}; // Lynn had it variable but initially it was grey.
     border-radius: var(--border-radius);
     margin: 2em 0;
     padding: 1.25em;

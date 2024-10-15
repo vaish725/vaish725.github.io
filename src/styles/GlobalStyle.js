@@ -1,3 +1,4 @@
+// VISITED AND VERIFIED
 import { createGlobalStyle } from 'styled-components';
 import fonts from './fonts';
 import variables from './variables';
@@ -11,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     width: 100%;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; // Lynn did not have this but I want this as it helps me go smoothly to clicking on top right page navigation buttons.
   }
 
   *,
@@ -30,7 +31,6 @@ const GlobalStyle = createGlobalStyle`
     outline: 2px dashed var(--green);
     outline-offset: 3px;
   }
-
   /*
     Remove default focus styles for mouse users ONLY if
     :focus-visible is supported on this platform.
@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
     outline: 2px dashed var(--green);
     outline-offset: 3px;
   }
-
+  // Lynn removed above part
   /* Scrollbar Styles */
   html {
     scrollbar-width: thin;
@@ -322,7 +322,7 @@ const GlobalStyle = createGlobalStyle`
         padding-left: 30px;
         margin-bottom: 10px;
         &:before {
-          content: '▹';
+          content: '❖';
           position: absolute;
           left: 0;
           color: var(--green);
@@ -380,8 +380,8 @@ const GlobalStyle = createGlobalStyle`
       height: auto;
       overflow: auto;
       z-index: 99;
-      box-shadow: none;
-      transform: none;
+      box-shadow: none; // Lynn didn't have this
+      transform: none; // Lynn didn't have this
     }
   }
 
