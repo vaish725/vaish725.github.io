@@ -67,7 +67,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a <strong>Robotics Software Engineer</strong> specializing in specializing in <strong>Perception and Planning</strong> for Robots.
+        I’m a <strong>Robotics Software Engineer</strong> specializing in <strong>Perception and Planning</strong> for Robots.
       </p>
 
       <p>
