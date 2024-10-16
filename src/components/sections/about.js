@@ -150,7 +150,7 @@ const About = () => {
           </p>
 
           <p>
-            Throughout my journey, I've had the opportunity to work as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, where I enhanced multi-agent path planning and optimized navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I developed a novel deep learning architecture that improved autonomous navigation in crowded environments. Currently, as an <strong>Intern at Intuitive Surgical</strong>, I'm working on implementing Optical Flow solutions to verify and ensure intuitive driving for clinician during surgical procedures.
+            Throughout my journey, I've had the opportunity to work as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, where I enhanced multi-agent path planning and optimized navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I developed a novel deep learning architecture that improved autonomous navigation in crowded environments. Currently, as an <strong>Co-op at Intuitive Surgical</strong>, I'm working on implementing Optical Flow solutions to verify and ensure intuitive driving for clinician during surgical procedures.
           </p>
 
           <p>

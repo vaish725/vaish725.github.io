@@ -269,6 +269,7 @@ const StyledProject = styled.li`
         .img {
           background: transparent;
           filter: none;
+          opacity: 1; /* Restore full opacity on hover *
         }
       }
 
@@ -292,6 +293,7 @@ const StyledProject = styled.li`
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1) brightness(90%);
+      opacity: 0.3; /* Set initial opacity to make it transparent */
 
       @media (max-width: 768px) {
         object-fit: cover;
