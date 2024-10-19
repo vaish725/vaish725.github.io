@@ -137,6 +137,7 @@ const StyledTabPanels = styled.div`
 `;
 
 const StyledTabPanel = styled.div`
+  text-align: justify; // Add this line to justify the text content
   width: 100%;
   height: auto;
   padding: 10px 5px;

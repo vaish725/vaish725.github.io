@@ -20,9 +20,12 @@ const StyledAboutSection = styled.section`
   }
 `;
 const StyledText = styled.div`
+  text-align: justify; // Add this line to justify the text content
+
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    // grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: 1fr; // Use a single column for all items
     // grid-gap: 0 10px; // Lynn does not have this
     padding: 0;
     margin: 20px 0 0 0;
@@ -136,7 +139,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Computer Vision', 'Robot Perception', 'Reinforcement Learning', 'Multimodal AI', 'C++', 'MATLAB'];
+  const skills = ['Languages: Python, C, C++, MATLAB', 'Libraries and Tools: OpenCV, ROS, MATLAB, TensorFlow, PyTorch, Git, Arduino, bash, CUDA, gtest, Qt, Fusion 360, Solidworks, Ultimaker Cura', 'Development Platforms: Linux (Ubuntu), Embedded robotics, Gazebo, AirSim, CARLA, CarSim, MoveIt'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -150,7 +153,7 @@ const About = () => {
           </p>
 
           <p>
-            Throughout my journey, I've had the opportunity to work as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, where I enhanced multi-agent path planning and optimized navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I developed a novel deep learning architecture that improved autonomous navigation in crowded environments. Currently, as an <strong>Co-op at Intuitive Surgical</strong>, I'm working on implementing Optical Flow solutions to verify and ensure intuitive driving for clinician during surgical procedures.
+            Throughout my journey, I've had the opportunity to work as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, where I enhanced multi-agent path planning and optimized navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I developed a novel deep learning architecture that improved autonomous navigation in crowded environments. Currently, as a <strong>Co-op at Intuitive Surgical</strong>, I'm working on implementing Optical Flow solutions to verify and ensure intuitive driving for clinician during surgical procedures.
           </p>
 
           <p>
@@ -163,8 +166,15 @@ const About = () => {
         </div>
 
 
-          <ul className="skills-list">
+          {/* <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+          </ul> */}
+          <ul className="skills-list">
+            <li><strong style={{color: 'var(--green)'}}>Languages:</strong> Python, C, C++, MATLAB</li>
+            <li><strong style={{color: 'var(--green)'}}>Libraries/Frameworks:</strong> OpenCV, ROS, TensorFlow, PyTorch, Arduino, CUDA, gtest</li>
+            <li><strong style={{color: 'var(--green)'}}>Development Platforms:</strong> Linux, Embedded robotics, Gazebo, AirSim, CARLA, CarSim, MoveIt</li>
+            <li><strong style={{color: 'var(--green)'}}>Design:</strong> Adobe Photoshop,Qt, Fusion 360, Solidworks, Ultimaker Cura, Figma</li>
+            <li><strong style={{color: 'var(--green)'}}>Tools:</strong> Kubernetes, Docker, Git, Confluence, bash, GitHub Actions, GPU Programming</li>
           </ul>
         </StyledText>
 
