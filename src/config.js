@@ -21,8 +21,8 @@ module.exports = {
       url: 'https://www.linkedin.com/in/msdeshpande04/',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7', //remove this
+      name: 'Medium',
+      url: 'https://medium.com/@deshpandemayank5', //remove this
     },
   ],
 
