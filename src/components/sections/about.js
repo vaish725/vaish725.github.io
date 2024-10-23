@@ -149,21 +149,24 @@ const About = () => {
         <StyledText>
         <div>
           <p>
-            Hello! <span role="img" aria-label="waving hand">👋</span> I'm <strong>Mayank</strong>, a <strong>Master's student in Robotics</strong> at the <strong>University of Maryland, College Park</strong>.
+            Hello! <span role="img" aria-label="waving hand">👋</span> I'm <strong>Mayank</strong>, a passionate <strong>Master's student in Robotics</strong> at the <strong>University of Maryland, College Park</strong>.
           </p>
 
           <p>
-            Throughout my journey, I've had the opportunity to work as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, where I enhanced multi-agent path planning and optimized navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I developed a novel deep learning architecture that improved autonomous navigation in crowded environments. Currently, as a <strong>Co-op at Intuitive Surgical</strong>, I'm working on implementing Optical Flow solutions to verify and ensure intuitive driving for clinician during surgical procedures.
+            My fascination with robotics began early on, driving me to explore and innovate in this dynamic field. Currently, I'm a <strong>Co-op at Intuitive Surgical</strong>, where I am implementing Optical Flow solutions to make driving the robot more intuitive for clinicians during Surgical procedures. Prior to this, I thrived as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, enhancing multi-agent path planning and optimizing navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I crafted a novel deep learning architecture that significantly improved autonomous navigation in dense crowds.
           </p>
 
           <p>
-              When I'm not immersed in robotics, I enjoy <strong>playing football</strong>, <strong>catching movies</strong>, and <strong>gaming with friends</strong>. My recent internship in California ignited a passion for <strong>hiking</strong>, and I love embarking on quick hikes whenever I get the chance. I'm also an avid reader of <strong>Finance books</strong> and could spend hours discussing <strong>investment strategies</strong>, <strong>personal finance</strong>, the <strong>stock market</strong>, and <strong>global economics</strong>.
+            When I'm not immersed in robotics, I love staying active by <strong>playing football</strong> and exploring the outdoors through <strong>hiking</strong>. I'm also a dedicated enthusiast of <strong>finance</strong>, enjoying deep dives into <strong>investment strategies</strong> and discussions about the <strong>stock market</strong> and <strong>global economics</strong>. When it comes to it's watching a good movie or gaming with friends, I don't have a NO in my dictionary.
           </p>
 
           <p>
-            I'm passionate about contributing to technologies that <strong>shape the future</strong> and <strong>enhance lives</strong> through innovative robotics solutions.
+            <strong>Here are a few technologies I’ve been working with recently:</strong>
           </p>
         </div>
+
+
+
 
 
           {/* <ul className="skills-list">

@@ -7,10 +7,8 @@ external: ''
 tech:
   - C++
   - ROS2
-  - Gazebo
   - OpenCV
   - GoogleTest
-  - GitHub Actions
   - Doxygen
   - YOLOv5
 ---
