@@ -157,7 +157,7 @@ const About = () => {
           </p>
 
           <p>
-            When I'm not immersed in robotics, I love staying active by <strong>playing football</strong> and exploring the outdoors through <strong>hiking</strong>. I'm also a dedicated enthusiast of <strong>finance</strong>, enjoying deep dives into <strong>investment strategies</strong> and discussions about the <strong>stock market</strong> and <strong>global economics</strong>. When it comes to watching a good movie or gaming with friends, I am ever ready for that.
+            When I'm not immersed in robotics, I love staying active by <strong>playing football</strong> and exploring the outdoors through <strong>hiking</strong>. I'm also a dedicated enthusiast of <strong>finance</strong>, enjoying deep dives into <strong>investment strategies</strong> and discussions about the <strong>stock market</strong> and <strong>global economics</strong>. When it comes to watching a good movie or gaming with friends, I am always ready for that.
           </p>
 
           <p>
