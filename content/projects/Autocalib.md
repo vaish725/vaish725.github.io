@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '07-02-2024'
 title: 'AutoCalib'
 github: 'https://github.com/MayankD409/AutoCalib.git'
 external: ''

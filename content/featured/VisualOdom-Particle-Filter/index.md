@@ -8,7 +8,6 @@ tech:
   - Python
   - ROS2
   - OpenCV
-  - NumPy
   - PyTorch
   - Particle Filter
   - CNN Encoders

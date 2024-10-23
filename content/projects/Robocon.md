@@ -1,5 +1,5 @@
 ---
-date: '9'
+date: '01-02-2022'
 title: 'Ball Shooter and Receiver robot'
 github: 'https://github.com/MayankD409/ABU_ROBOCON-2022.git'
 external: ''

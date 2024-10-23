@@ -1,5 +1,5 @@
 ---
-date: '12'
+date: '12-05-2024'
 title: 'VisualOdom-Particle-Filter'
 github: 'https://github.com/MayankD409/VisualOdom-Particle-Filter.git'
 external: ''
@@ -11,7 +11,7 @@ tech:
   - Particle Filter
   - CNN Encoders
 company: 'UMD'
-showInProjects: true
+showInProjects: false
 ---
 
 A vision-based localization and visual odometry system for drones utilizing particle filters and advanced image encoding techniques. This project integrates CNN-based, VecKM-based, and Histogram of Features encoders to accurately estimate drone positions within a mapped environment, demonstrating robust performance through simulation in Gazebo and seamless ROS2 integration.

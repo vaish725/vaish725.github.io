@@ -1,5 +1,5 @@
 ---
-date: '10'
+date: '04-02-2023'
 title: 'Autonomous Differential drive Robot'
 github: 'https://github.com/MayankD409/Autonomous_bot.git'
 external: ''

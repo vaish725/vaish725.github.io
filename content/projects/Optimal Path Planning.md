@@ -1,5 +1,5 @@
 ---
-date: '5'
+date: '05-03-2024'
 title: 'Path Planning Algorithms for Point Robot'
 github: 'https://github.com/MayankD409/Optimal_Path_Planning.git'
 external: ''

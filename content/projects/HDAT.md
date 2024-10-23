@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '09-10-2023'
 title: 'Human detection and Tracking'
 github: 'https://github.com/MayankD409/HumanDetectionandTracking.git'
 external: ''

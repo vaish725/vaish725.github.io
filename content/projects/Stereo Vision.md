@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '08-02-2024'
 title: 'Stereo Vision'
 github: 'https://github.com/MayankD409/Stereo-Vision.git'
 external: ''

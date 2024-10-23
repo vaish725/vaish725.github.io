@@ -1,5 +1,5 @@
 ---
-date: '4'
+date: '07-04-2024'
 title: 'Pb-Lite and DL for Edge Detection'
 github: 'https://github.com/MayankD409/Pb_lite_Edge_Detection.git'
 external: ''

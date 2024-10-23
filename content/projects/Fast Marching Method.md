@@ -1,5 +1,5 @@
 ---
-date: '6'
+date: '06-04-2024'
 title: 'Fast Marching Method Planner'
 github: 'https://github.com/MayankD409/Fast-Marching-Method.git'
 external: ''

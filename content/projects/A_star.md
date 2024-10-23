@@ -1,5 +1,5 @@
 ---
-date: '8'
+date: '02-09-2024'
 title: 'A* Algorithm implementation Rigid Robot'
 github: 'https://github.com/MayankD409/A_star_algorithm_on_rigid_robot.git'
 external: ''
