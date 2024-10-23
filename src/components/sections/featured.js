@@ -245,7 +245,7 @@ const StyledProject = styled.li`
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;
-      opacity: 0.25;
+      opacity: 0.5;
     }
 
     a {
@@ -288,7 +288,7 @@ const StyledProject = styled.li`
       border-radius: var(--border-radius);
 
       filter: grayscale(100%) contrast(1) brightness(90%);
-      opacity: 0.3; /* Set initial opacity to make it transparent */
+      opacity: 0.6; /* Set initial opacity to make it transparent */
 
       @media (max-width: 768px) {
         object-fit: cover;

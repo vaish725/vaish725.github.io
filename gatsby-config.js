@@ -20,13 +20,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Mayank Deshpande', // Updated from 'Brittany Chiang'
+        short_name: 'MayankD', // Updated from 'Brittany Chiang' and shortened
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
-        display: 'minimal-ui',
-        icon: 'src/images/Fistbump.png',
+        display: 'standalone', // Changed to 'standalone' for better PWA experience
+        icon: 'src/images/Fistbump.png', // Ensure this path is correct
+        // Adding additional manifest options for better PWA support
+        crossOrigin: `use-credentials`, // Defaults to undefined
+        // Optionally, you can add icons array if you have multiple icon sizes
       },
     },
     // `gatsby-plugin-offline`,
