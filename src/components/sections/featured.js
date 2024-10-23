@@ -153,6 +153,7 @@ const StyledProject = styled.li`
 
   .project-description {
     ${({ theme }) => theme.mixins.boxShadow};
+    text-align: justify;
     position: relative;
     z-index: 2;
     padding: 25px;

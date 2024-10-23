@@ -13,4 +13,4 @@ tech:
   - YOLOv5
 ---
 
-A robust swarm robotics system for Search and Rescue operations, developed with C++ and ROS2. It features autonomous navigation, real-time object detection using YOLOv5, and seamless multi-robot coordination. The system supports dynamic robot spawning via configuration files or in-code settings, integrates with Nav2 for advanced path planning, and utilizes Gazebo for realistic simulations.
+A swarm robotic system for Search and Rescue operations, developed with C++ and ROS2. It features autonomous navigation, real-time object detection using YOLOv5, and seamless multi-robot coordination. The system supports dynamic robot spawning via configuration files or in-code settings, integrates with Nav2 for advanced path planning, and utilizes Gazebo for realistic simulations.

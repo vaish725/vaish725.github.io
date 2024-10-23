@@ -157,7 +157,7 @@ const About = () => {
           </p>
 
           <p>
-            When I'm not immersed in robotics, I love staying active by <strong>playing football</strong> and exploring the outdoors through <strong>hiking</strong>. I'm also a dedicated enthusiast of <strong>finance</strong>, enjoying deep dives into <strong>investment strategies</strong> and discussions about the <strong>stock market</strong> and <strong>global economics</strong>. When it comes to it's watching a good movie or gaming with friends, I don't have a NO in my dictionary.
+            When I'm not immersed in robotics, I love staying active by <strong>playing football</strong> and exploring the outdoors through <strong>hiking</strong>. I'm also a dedicated enthusiast of <strong>finance</strong>, enjoying deep dives into <strong>investment strategies</strong> and discussions about the <strong>stock market</strong> and <strong>global economics</strong>. When it comes to watching a good movie or gaming with friends, I am ever ready for that.
           </p>
 
           <p>
@@ -176,7 +176,7 @@ const About = () => {
             <li><strong style={{color: 'var(--green)'}}>Languages:</strong> Python, C, C++, MATLAB</li>
             <li><strong style={{color: 'var(--green)'}}>Libraries/Frameworks:</strong> OpenCV, ROS, TensorFlow, PyTorch, Arduino, CUDA, gtest</li>
             <li><strong style={{color: 'var(--green)'}}>Development Platforms:</strong> Linux, Embedded robotics, Gazebo, AirSim, CARLA, CarSim, MoveIt</li>
-            <li><strong style={{color: 'var(--green)'}}>Design:</strong> Adobe Photoshop,Qt, Fusion 360, Solidworks, Ultimaker Cura, Figma</li>
+            <li><strong style={{color: 'var(--green)'}}>Design:</strong> Adobe Photoshop, Qt, Fusion 360, Solidworks, Ultimaker Cura, Figma</li>
             <li><strong style={{color: 'var(--green)'}}>Tools:</strong> Kubernetes, Docker, Git, Confluence, bash, GitHub Actions, GPU Programming</li>
           </ul>
         </StyledText>

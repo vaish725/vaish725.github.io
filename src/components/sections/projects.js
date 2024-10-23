@@ -8,6 +8,7 @@ import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledProjectsSection = styled.section`
+  text-align: justify;
   display: flex;
   flex-direction: column;
   align-items: center;
