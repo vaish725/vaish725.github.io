@@ -32,7 +32,7 @@ module.exports = {
         // Optionally, you can add icons array if you have multiple icon sizes
       },
     },
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
