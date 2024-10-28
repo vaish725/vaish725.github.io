@@ -134,12 +134,7 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>
-              Hello! My name is VAISHNAVIIIIIIIIIIIII KAMDIIIIII and I enjoy creating things that
-              live on the internet. My interest in web development started back in 2012 when I
-              decided to try editing custom Tumblr themes — turns out hacking together a custom
-              reblog button taught me a lot about HTML &amp; CSS!
-            </p>
+            <p>Hello! My name is VAISHNAVIIIIIIIIIIIII KAMDIIIIII and I enjoy having nachos!</p>
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
