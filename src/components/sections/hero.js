@@ -82,11 +82,11 @@ const Hero = () => {
   );
   const five = (
     <a
+      href="/Vaishnavi Latex Resume.pdf"
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
       target="_blank"
-      rel="noreferrer">
-      Check out my course!
+      rel="noopener noreferrer">
+      My Resume
     </a>
   );
 
