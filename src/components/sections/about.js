@@ -134,7 +134,11 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! My name is VAISHNAVIIIIIIIIIIIII KAMDIIIIII and I enjoy having nachos!</p>
+            <p>
+              Hello! I'm <strong>Vaishnavi,</strong> a passionate{' '}
+              <strong>Master's student in Computer Science </strong>
+              at the <strong>George Washington University, Washington DC.</strong>{' '}
+            </p>
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
