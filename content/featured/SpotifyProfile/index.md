@@ -1,15 +1,13 @@
 ---
 date: '2'
-title: 'Spotify Profile'
+title: 'AquaDeTeQ: Aquatic Animal Species Detection'
 cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
-external: 'https://spotify-profile.herokuapp.com/'
+github: 'https://github.com/vaish725/AquaDeTeQ-Aquatic-Animal-Species-Identification'
+external: ''
 tech:
-  - React
-  - Styled Components
-  - Express
-  - Spotify API
-  - Heroku
+  - Python
+  - Tensorflow
+  - Vue.js
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+Developed AquaDeTeQ, an advanced aquatic species detection system powered by a custom-trained YOLOv5 model, featuring real-time classification capabilities and optimized edge deployment on Raspberry Pi. The system processes both image and video inputs through efficient data pipelines, achieving 93% detection accuracy while maintaining robust performance for autonomous marine species identification.
