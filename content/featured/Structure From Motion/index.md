@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '4'
 title: 'Structure from Motion'
 cover: './fountain_p11.png'
 github: 'https://github.com/MayankD409/Structure-From-Motion.git'

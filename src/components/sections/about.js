@@ -139,7 +139,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Languages: Python, C, C++, MATLAB', 'Libraries and Tools: OpenCV, ROS, MATLAB, TensorFlow, PyTorch, Git, Arduino, bash, CUDA, gtest, Qt, Fusion 360, Solidworks, Ultimaker Cura', 'Development Platforms: Linux (Ubuntu), Embedded robotics, Gazebo, AirSim, CARLA, CarSim, MoveIt'];
+  const skills = ['Languages: Python, C, C++, MATLAB', 'Libraries and Tools: OpenCV, ROS, MATLAB, TensorFlow, PyTorch, Git, Arduino, bash, CUDA, gtest, Qt, Fusion 360, Solidworks, Ultimaker Cura', 'Development Platforms: Linux (Ubuntu), Embedded robotics, Gazebo, AirSim, CARLA, CarSim, SUMO, MoveIt'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -175,7 +175,7 @@ const About = () => {
           <ul className="skills-list">
             <li><strong style={{color: 'var(--green)'}}>Languages:</strong> Python, C, C++, MATLAB</li>
             <li><strong style={{color: 'var(--green)'}}>Libraries/Frameworks:</strong> OpenCV, ROS, TensorFlow, PyTorch, Arduino, CUDA, gtest</li>
-            <li><strong style={{color: 'var(--green)'}}>Development Platforms:</strong> Linux, Embedded robotics, Gazebo, AirSim, CARLA, CarSim, MoveIt</li>
+            <li><strong style={{color: 'var(--green)'}}>Development Platforms:</strong> Linux, Embedded robotics, Gazebo, AirSim, CARLA, CarSim, SUMO, MoveIt</li>
             <li><strong style={{color: 'var(--green)'}}>Design:</strong> Adobe Photoshop, Qt, Fusion 360, Solidworks, Ultimaker Cura, Figma</li>
             <li><strong style={{color: 'var(--green)'}}>Tools:</strong> Kubernetes, Docker, Git, Confluence, bash, GitHub Actions, GPU Programming</li>
           </ul>
