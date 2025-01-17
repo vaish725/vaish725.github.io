@@ -79,7 +79,7 @@ const Hero = () => {
         Currently, looking for full-time roles in robotics and computer vision starting June 2025.
         Do{' '}
         <a href="#contact">
-          Reach Out 
+          reach out 
         </a>
         {' '}if you think I'd make a good fit for your organization!
       </p>

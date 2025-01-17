@@ -147,23 +147,23 @@ const About = () => {
 
       <div className="inner">
         <StyledText>
-        <div>
-          <p>
-            Hello! <span role="img" aria-label="waving hand">👋</span> I'm <strong>Mayank</strong>, a passionate <strong>Master's student in Robotics</strong> at the <strong>University of Maryland, College Park</strong>.
-          </p>
+          <div>
+            <p>
+              Hello! <span role="img" aria-label="waving hand">👋</span> I'm <strong>Mayank</strong>, a dedicated <strong>Master's student in Robotics</strong> at the <strong>University of Maryland, College Park</strong>.
+            </p>
 
-          <p>
-            My fascination with robotics began early on, driving me to explore and innovate in this dynamic field. Currently, I'm a <strong>Co-op at Intuitive Surgical</strong>, where I am implementing Optical Flow solutions to make driving the robot more intuitive for clinicians during Surgical procedures. Prior to this, I thrived as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, enhancing multi-agent path planning and optimizing navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I crafted a novel deep learning architecture that significantly improved autonomous navigation in dense crowds.
-          </p>
+            <p>
+            My fascination with robotics began early on, driving me to explore and innovate in this dynamic field. I recently completed a <strong>Co-op at Intuitive Surgical</strong>, where I developed Optical Flow solutions to enhance robot intuitiveness for clinicians during surgical procedures. Previously, as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, I optimized multi-agent path planning and navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I designed a novel deep learning architecture that significantly advanced autonomous navigation in crowded environments.
+            </p>
 
-          <p>
-            When I'm not immersed in robotics, I love staying active by <strong>playing football</strong> and exploring the outdoors through <strong>hiking</strong>. I'm also a dedicated enthusiast of <strong>finance</strong>, enjoying deep dives into <strong>investment strategies</strong> and discussions about the <strong>stock market</strong> and <strong>global economics</strong>. When it comes to watching a good movie or gaming with friends, I am always ready for that.
-          </p>
+            <p>
+              Outside of robotics, I stay active by <strong>playing football</strong> and <strong>hiking</strong>. I'm passionate about <strong>finance</strong>, delving into <strong>investment strategies</strong> and exploring the <strong>stock market</strong> and <strong>global economics</strong>. I also enjoy unwinding with a good movie or gaming with friends.
+            </p>
 
-          <p>
-            <strong>Here are a few technologies I’ve been working with recently:</strong>
-          </p>
-        </div>
+            <p>
+              <strong>Technologies I’ve been working with recently:</strong>
+            </p>
+          </div>
 
 
 
@@ -173,7 +173,7 @@ const About = () => {
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul> */}
           <ul className="skills-list">
-            <li><strong style={{color: 'var(--green)'}}>Languages:</strong> Python, C, C++, MATLAB</li>
+            <li><strong style={{color: 'var(--green)'}}>Languages:</strong> C++, Python, C, MATLAB</li>
             <li><strong style={{color: 'var(--green)'}}>Libraries/Frameworks:</strong> OpenCV, ROS, TensorFlow, PyTorch, Arduino, CUDA, gtest</li>
             <li><strong style={{color: 'var(--green)'}}>Development Platforms:</strong> Linux, Embedded robotics, Gazebo, AirSim, CARLA, CarSim, SUMO, MoveIt</li>
             <li><strong style={{color: 'var(--green)'}}>Design:</strong> Adobe Photoshop, Qt, Fusion 360, Solidworks, Ultimaker Cura, Figma</li>
@@ -185,7 +185,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/ups-shot.jpg" //either me.jpg or ups-shot.jpg
+              src="../../images/cali.jpeg" //either me.jpg or ups-shot.jpg
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

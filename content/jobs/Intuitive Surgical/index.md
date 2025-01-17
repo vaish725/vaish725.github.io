@@ -3,7 +3,7 @@ date: '2024-11-24'
 title: 'SA Engineer Co-op'
 company: 'Intuitive Surgical'
 location: 'Sunnyvale, CA'
-range: 'May 2024 - Present'
+range: 'May 2024 - Dec 2024'
 url: 'https://www.intuitive.com/en-us/products-and-services/ion'
 ---
 
