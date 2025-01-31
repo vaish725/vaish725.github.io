@@ -72,7 +72,7 @@ const Hero = () => {
       </p>
 
       <p>
-        My expertise spans <strong>Computer Vision</strong>, <strong>Robot Perception</strong>, <strong>Reinforcement Learning</strong>, and <strong>Multimodal AI</strong>.
+        My expertise spans <strong>Computer Vision</strong>, <strong>Robot Perception</strong>, <strong>System Architecture</strong>, and <strong>Multimodal AI</strong>.
       </p>
 
       <p>
