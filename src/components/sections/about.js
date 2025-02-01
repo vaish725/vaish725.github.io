@@ -174,9 +174,9 @@ const About = () => {
           </ul> */}
           <ul className="skills-list">
             <li><strong style={{color: 'var(--green)'}}>Languages:</strong> C++, Python, C, MATLAB</li>
-            <li><strong style={{color: 'var(--green)'}}>Libraries/Frameworks:</strong> OpenCV, ROS, TensorFlow, PyTorch, Arduino, CUDA, gtest</li>
-            <li><strong style={{color: 'var(--green)'}}>Development Platforms:</strong> Linux, Embedded robotics, Gazebo, AirSim, CARLA, CarSim, SUMO, MoveIt</li>
-            <li><strong style={{color: 'var(--green)'}}>Design:</strong> Adobe Photoshop, Qt, Fusion 360, Solidworks, Ultimaker Cura, Figma</li>
+            <li><strong style={{color: 'var(--green)'}}>Development Platforms:</strong> Linux/RTOS environments, Embedded robotics, Gazebo, AirSim, CARLA, CarSim, MoveIt, SUMO</li>
+            <li><strong style={{color: 'var(--green)'}}>Libraries/Frameworks:</strong> ROS/ROS2, PyTorch, JAX, OpenCV, TensorFlow, Arduino, gtest, Qt, SolidWorks</li>
+            <li><strong style={{color: 'var(--green)'}}>Embedded & Architecture:</strong> ARM platforms, CUDA, TensorRT, RTOS, controllers, interrupts, buses</li>
             <li><strong style={{color: 'var(--green)'}}>Tools:</strong> Kubernetes, Docker, Git, Confluence, bash, GitHub Actions, GPU Programming</li>
           </ul>
         </StyledText>
@@ -185,7 +185,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/cali.jpeg" //either me.jpg or ups-shot.jpg
+              src="../../images/cali_zoomed.jpeg" //either me.jpg or ups-shot.jpg
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
