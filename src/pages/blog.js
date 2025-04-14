@@ -1,4 +1,3 @@
-// VISITED BUT PLAY AROUND WITH THIS
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
@@ -9,18 +8,12 @@ import { Layout } from '@components';
 import { IconBookmark } from '@components/icons';
 
 const StyledMainContainer = styled.main`
+  max-width: 1200px;
+  margin: 0 auto;
+  
   & > header {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     text-align: center;
-
-    a {
-      &:hover,
-      &:focus {
-        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>⚡</text></svg>")
-            20 0,
-          auto;
-      }
-    }
   }
 
   footer {
@@ -29,27 +22,23 @@ const StyledMainContainer = styled.main`
     margin-top: 20px;
   }
 `;
-const StyledGrid = styled.ul`
+
+const StyledPostList = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 15px;
   margin-top: 50px;
   position: relative;
-
-  @media (max-width: 1080px) {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
 `;
+
 const StyledPost = styled.li`
   transition: var(--transition);
   cursor: default;
+  margin-bottom: 30px;
 
   @media (prefers-reduced-motion: no-preference) {
     &:hover,
     &:focus-within {
       .post__inner {
-        transform: translateY(-7px);
+        transform: translateY(-5px);
       }
     }
   }
@@ -66,22 +55,28 @@ const StyledPost = styled.li`
     align-items: flex-start;
     position: relative;
     height: 100%;
-    padding: 2rem 1.75rem;
+    padding: 2.5rem;
     border-radius: var(--border-radius);
     transition: var(--transition);
     background-color: var(--light-navy);
 
-    header,
-    a {
+    header {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
     }
   }
 
   .post__icon {
-    ${({ theme }) => theme.mixins.flexBetween};
+    ${({ theme }) => theme.mixins.flexCenter};
     color: var(--green);
-    margin-bottom: 30px;
-    margin-left: -5px;
+    margin-right: 20px;
 
     svg {
       width: 40px;
@@ -112,7 +107,16 @@ const StyledPost = styled.li`
 
   .post__desc {
     color: var(--light-slate);
-    font-size: 17px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .post__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
   }
 
   .post__date {
@@ -124,7 +128,7 @@ const StyledPost = styled.li`
 
   ul.post__tags {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
@@ -143,24 +147,78 @@ const StyledPost = styled.li`
   }
 `;
 
-const PensievePage = ({ location, data }) => {
+const StyledTagsSection = styled.div`
+  margin-bottom: 30px;
+  
+  h2 {
+    font-size: var(--fz-lg);
+    margin-bottom: 15px;
+  }
+  
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    a {
+      display: inline-block;
+      background-color: var(--light-navy);
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xxs);
+      padding: 4px 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      transition: var(--transition);
+      
+      &:hover,
+      &:focus,
+      &.active {
+        background-color: var(--green-tint);
+      }
+      
+      &.view-all {
+        margin-left: 10px;
+        background-color: transparent;
+        border: 1px solid var(--green);
+      }
+    }
+  }
+`;
+
+const BlogPage = ({ location, data }) => {
   const posts = data.allMarkdownRemark.edges;
+  const tags = data.tagsGroup.group;
 
   return (
     <Layout location={location}>
-      <Helmet title="Pensieve" />
+      <Helmet title="Blog" />
 
       <StyledMainContainer>
         <header>
-          <h1 className="big-heading">Pensieve</h1>
-          {/* <p className="subtitle">
-            <a href="https://www.wizardingworld.com/writing-by-jk-rowling/pensieve">
-              a collection of memories
-            </a>
-          </p> */}
+          <h1 className="big-heading">Blog</h1>
+          <p className="subtitle">
+            Thoughts, ideas, and technical explorations
+          </p>
         </header>
+        
+        <StyledTagsSection>
+          <h2>Browse by Tag</h2>
+          <div className="tag-list">
+            <Link to="/blog">All</Link>
+            {tags.slice(0, 10).map(tag => (
+              <Link key={tag.fieldValue} to={`/blog/tags/${kebabCase(tag.fieldValue)}/`}>
+                {tag.fieldValue} ({tag.totalCount})
+              </Link>
+            ))}
+            {tags.length > 10 && (
+              <Link to="/blog-tags" className="view-all">View all tags...</Link>
+            )}
+          </div>
+        </StyledTagsSection>
 
-        <StyledGrid>
+        <StyledPostList>
           {posts.length > 0 &&
             posts.map(({ node }, i) => {
               const { frontmatter } = node;
@@ -171,44 +229,48 @@ const PensievePage = ({ location, data }) => {
                 <StyledPost key={i}>
                   <div className="post__inner">
                     <header>
-                      <div className="post__icon">
-                        <IconBookmark />
+                      <div className="header-top">
+                        <div className="post__icon">
+                          <IconBookmark />
+                        </div>
+                        <div>
+                          <h2 className="post__title">
+                            <Link to={slug}>{title}</Link>
+                          </h2>
+                          <span className="post__date">{formattedDate}</span>
+                        </div>
                       </div>
-                      <h5 className="post__title">
-                        <Link to={slug}>{title}</Link>
-                      </h5>
                       <p className="post__desc">{description}</p>
                     </header>
 
-                    <footer>
-                      <span className="post__date">{formattedDate}</span>
+                    <div className="post__footer">
                       <ul className="post__tags">
-                        {tags.map((tag, i) => (
+                        {tags && tags.map((tag, i) => (
                           <li key={i}>
-                            <Link to={`/pensieve/tags/${kebabCase(tag)}/`} className="inline-link">
+                            <Link to={`/blog/tags/${kebabCase(tag)}/`} className="inline-link">
                               #{tag}
                             </Link>
                           </li>
                         ))}
                       </ul>
-                    </footer>
+                    </div>
                   </div>
                 </StyledPost>
               );
             })}
-        </StyledGrid>
+        </StyledPostList>
       </StyledMainContainer>
     </Layout>
   );
 };
 
-PensievePage.propTypes = {
+BlogPage.propTypes = {
   location: PropTypes.object.isRequired,
   data: PropTypes.object.isRequired,
 };
 
-export default PensievePage;
-// Lynn does not have Line 214
+export default BlogPage;
+
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
@@ -229,5 +291,13 @@ export const pageQuery = graphql`
         }
       }
     }
+    tagsGroup: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/posts/" }, frontmatter: { draft: { ne: true } } }
+    ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+    }
   }
-`;
+`; 

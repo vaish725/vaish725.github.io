@@ -11,6 +11,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve(`src/templates/post.js`);
   const tagTemplate = path.resolve('src/templates/tag.js');
+  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+  const blogTagTemplate = path.resolve('src/templates/blog-tag.js');
 
   const result = await graphql(`
     {
@@ -45,20 +47,41 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const posts = result.data.postsRemark.edges;
 
   posts.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.slug,
-      component: postTemplate,
-      context: {},
-    });
+    // Create regular pensieve posts
+    if (node.frontmatter.slug.includes('/pensieve/')) {
+      createPage({
+        path: node.frontmatter.slug,
+        component: postTemplate,
+        context: {},
+      });
+    } 
+    // Create blog posts
+    else {
+      createPage({
+        path: node.frontmatter.slug,
+        component: blogPostTemplate,
+        context: {},
+      });
+    }
   });
 
   // Extract tag data from query
   const tags = result.data.tagsGroup.group;
-  // Make tag pages
+  
+  // Create regular pensieve tag pages
   tags.forEach(tag => {
     createPage({
       path: `/pensieve/tags/${_.kebabCase(tag.fieldValue)}/`,
       component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    });
+    
+    // Create blog tag pages
+    createPage({
+      path: `/blog/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: blogTagTemplate,
       context: {
         tag: tag.fieldValue,
       },

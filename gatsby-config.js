@@ -153,9 +153,24 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-45666519-2',
+        // You need to specify the GA measurement ID from your Google Analytics setup
+        trackingIds: [
+          'G-19HH1VFS32', // Replace with your Google Analytics measurement ID
+        ],
+        // This object gets passed directly to the gtag config command
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+        },
       },
     },
   ],

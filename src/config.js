@@ -44,6 +44,10 @@ module.exports = {
       url: '/#publications',
     },
     {
+      name: 'Blog',
+      url: '/blog',
+    },
+    {
       name: 'Contact',
       url: '/#contact',
     },
