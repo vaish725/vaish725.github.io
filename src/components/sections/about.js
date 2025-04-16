@@ -173,11 +173,12 @@ const About = () => {
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul> */}
           <ul className="skills-list">
-            <li><strong style={{color: 'var(--green)'}}>Languages:</strong> C++, Python, C, MATLAB</li>
-            <li><strong style={{color: 'var(--green)'}}>Development Platforms:</strong> Linux/RTOS environments, Embedded robotics, Gazebo, AirSim, CARLA, CarSim, MoveIt, SUMO</li>
-            <li><strong style={{color: 'var(--green)'}}>Libraries/Frameworks:</strong> ROS/ROS2, PyTorch, JAX, OpenCV, TensorFlow, Arduino, gtest, Qt, SolidWorks</li>
-            <li><strong style={{color: 'var(--green)'}}>Embedded & Architecture:</strong> ARM platforms, CUDA, TensorRT, RTOS, controllers, interrupts, buses</li>
-            <li><strong style={{color: 'var(--green)'}}>Tools:</strong> Kubernetes, Docker, Git, Confluence, bash, GitHub Actions, GPU Programming</li>
+            <li><strong style={{color: 'var(--green)'}}>Programming Languages:</strong> Python, C++, C</li>
+            <li><strong style={{color: 'var(--green)'}}>AI/ML Libraries & Frameworks:</strong> PyTorch, OpenCV, Pandas, NumPy</li>
+            <li><strong style={{color: 'var(--green)'}}>Core AI/ML:</strong> Deep Learning (Transformers, CNNs, RNNs), Computer Vision, Reinforcement Learning, Model Evaluation & Validation, Multimodal Finetuning & Post-Training</li>
+            <li><strong style={{color: 'var(--green)'}}>Hardware Acceleration & Optimization:</strong> CUDA, TensorRT</li>
+            <li><strong style={{color: 'var(--green)'}}>MLOps, Platforms & Tools:</strong> Docker, Kubernetes, Git, GitHub Actions (CI/CD), Linux, Bash Scripting, AWS/GCP, Jira/Confluence</li>
+            <li><strong style={{color: 'var(--green)'}}>Testing:</strong> GoogleTest (gtest)</li>
           </ul>
         </StyledText>
 
