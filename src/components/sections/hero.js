@@ -64,24 +64,23 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Mayank Deshpande.</h2>;
-  const three = <h3 className="big-heading">I am a Robotics Software Engineer.</h3>;
+  const three = <h3 className="big-heading">I love to build Software</h3>;
   const four = (
     <>
       <p>
-        I’m a <strong>Robotics Software Engineer</strong> specializing in <strong>Perception and Planning</strong> for Robots.
+        I'm on an <strong>upskilling journey</strong> to master <strong>AI</strong>, pushing boundaries everyday to explore the edge of the fractal.
       </p>
 
       <p>
-        My expertise spans <strong>Computer Vision</strong>, <strong>Robot Perception</strong>, <strong>System Architecture</strong>, and <strong>Multimodal AI</strong>.
+        My expertise spans across <strong>NLP</strong>, <strong>Robotics (C++ Software Development)</strong>, and <strong>deploying</strong> <strong>Multimodal AI</strong> systems, all while crafting something innovative along the way.
       </p>
 
       <p>
-        Currently, looking for full-time roles in robotics and computer vision starting June 2025.
-        Do{' '}
+        Always looking to work on exciting projects—feel free to{' '}
         <a href="#contact">
-          reach out 
+          reach out
         </a>
-        {' '}if you think I'd make a good fit for your organization!
+        {' '}if you'd like to build something amazing together!
       </p>
     </>
   );
