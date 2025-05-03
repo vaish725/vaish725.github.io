@@ -148,21 +148,21 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>
-              Hello! <span role="img" aria-label="waving hand">👋</span> I'm <strong>Mayank</strong>, a dedicated <strong>Master's student in Robotics</strong> at the <strong>University of Maryland, College Park</strong>.
-            </p>
+          <p>
+            I absolutely love talking <strong>Football, Finance, and Startups</strong>—and honestly, I think the life would’ve been way more exciting if I was already working in one of these <em>(but hey, I'm getting there!)</em>.
+          </p>
 
-            <p>
-            My fascination with robotics began early on, driving me to explore and innovate in this dynamic field. I recently completed a <strong>Co-op at Intuitive Surgical</strong>, where I developed Optical Flow solutions to enhance robot intuitiveness for clinicians during surgical procedures. Previously, as a <strong>Robotics Software Engineer at Codelattice Labs</strong>, I optimized multi-agent path planning and navigation systems for delivery robots. At the <strong>GAMMA AI Lab</strong>, I designed a novel deep learning architecture that significantly advanced autonomous navigation in crowded environments.
-            </p>
+          <p>
+            Something else I find really cool? <strong>Robots</strong>. I recently wrapped up my <strong>Master's degree in Robotics</strong>, where I spent countless hours diving into Controls, Perception, and way too much C++. But after taking a course on <strong>Multimodal Foundation Models</strong>, I got completely hooked and couldn't stop exploring them. Now, I've fully committed to diving deep into <strong>Multimodal Agentic AI</strong>. One thing I've realized along the way: it's incredibly valuable to master one area deeply before branching out—being able to claim mastery over a domain has so much cross-applicability <em>(Thank You, Kyle!)</em>
+          </p>
 
-            <p>
-              Outside of robotics, I stay active by <strong>playing football</strong> and <strong>hiking</strong>. I'm passionate about <strong>finance</strong>, delving into <strong>investment strategies</strong> and exploring the <strong>stock market</strong> and <strong>global economics</strong>. I also enjoy unwinding with a good movie or gaming with friends.
-            </p>
+          <p>
+            I’m excited for all the great conversations and adventures ahead as I keep exploring this fascinating journey!
+          </p>
 
-            <p>
+            {/* <p>
               <strong>Technologies I’ve been working with recently:</strong>
-            </p>
+            </p> */}
           </div>
 
 
@@ -172,14 +172,14 @@ const About = () => {
           {/* <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul> */}
-          <ul className="skills-list">
+          {/* <ul className="skills-list">
             <li><strong style={{color: 'var(--green)'}}>Programming Languages:</strong> Python, C++, C</li>
             <li><strong style={{color: 'var(--green)'}}>AI/ML Libraries & Frameworks:</strong> PyTorch, OpenCV, Pandas, NumPy</li>
             <li><strong style={{color: 'var(--green)'}}>Core AI/ML:</strong> Deep Learning (Transformers, CNNs, RNNs), Computer Vision, Reinforcement Learning, Model Evaluation & Validation, Multimodal Finetuning & Post-Training</li>
             <li><strong style={{color: 'var(--green)'}}>Hardware Acceleration & Optimization:</strong> CUDA, TensorRT</li>
             <li><strong style={{color: 'var(--green)'}}>MLOps, Platforms & Tools:</strong> Docker, Kubernetes, Git, GitHub Actions (CI/CD), Linux, Bash Scripting, AWS/GCP, Jira/Confluence</li>
             <li><strong style={{color: 'var(--green)'}}>Testing:</strong> GoogleTest (gtest)</li>
-          </ul>
+          </ul> */}
         </StyledText>
 
         <StyledPic>

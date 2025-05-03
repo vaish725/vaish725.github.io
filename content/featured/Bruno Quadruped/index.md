@@ -1,5 +1,5 @@
 ---
-date: '7'
+date: '8'
 title: 'Quadruped Gait Simulation'
 cover: './bruno_rviz.png'
 github: 'https://github.com/MayankD409/Bruno_Quadruped_Sim.git'

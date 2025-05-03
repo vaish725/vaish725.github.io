@@ -1,5 +1,5 @@
 ---
-date: '6'
+date: '7'
 title: 'Right Invariant Extended Kalman Filter (RIEKF) for Object-Based SLAM'
 cover: './image.png'
 github: 'https://github.com/MayankD409/RIEKF_Python.git'

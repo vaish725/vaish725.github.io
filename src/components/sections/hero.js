@@ -72,7 +72,7 @@ const Hero = () => {
       </p>
 
       <p>
-        My expertise spans across <strong>NLP</strong>, <strong>Robotics (C++ Software Development)</strong>, and <strong>deploying</strong> <strong>Multimodal AI</strong> systems, all while crafting something innovative along the way.
+        My expertise spans across <strong>NLP</strong>, <strong>Robotics (Controls, C++ dev)</strong>, and <strong>deploying</strong> <strong>Multimodal AI</strong> systems, all while crafting something innovative along the way.
       </p>
 
       <p>
