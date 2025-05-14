@@ -4,6 +4,13 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
+import { Helmet } from 'react-helmet';
+
+// https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]');
+}
 
 const StyledContent = styled.div`
   display: flex;
@@ -50,6 +57,20 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <Head />
+      
+      {/* Additional site-wide metadata */}
+      <Helmet>
+        <meta name="author" content="Mayank Deshpande" />
+        <meta name="generator" content="Gatsby" />
+        <meta property="og:site_name" content="Mayank Deshpande" />
+        <link rel="author" href="https://mayankd.me" />
+        <link rel="schema.dcterms" href="https://purl.org/dc/terms/" />
+        <meta name="dcterms.creator" content="Mayank Deshpande" />
+        <meta name="dcterms.title" content="Mayank Deshpande - Software Engineer" />
+        <meta name="dcterms.subject" content="Robotics, Software Engineer, Computer Vision, AI, Mayank Deshpande Portfolio" />
+        <meta name="dcterms.language" content="en" />
+        <meta name="geo.region" content="US" />
+      </Helmet>
 
       <div id="root">
         <ThemeProvider theme={theme}>

@@ -4,10 +4,16 @@ module.exports = {
   siteMetadata: {
     title: 'Mayank Deshpande',
     description:
-      'Mayank is a Robotics Software Engineer with interests in Computer Vision, Perception and AI.',
+      'Mayank Deshpande is a Robotics Software Engineer with expertise in Computer Vision, Perception and AI. Specializing in autonomous systems, robotics software development, and advanced perception algorithms.',
     siteUrl: 'https://mayankd.me', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@Mayank_D04',
+    keywords: 'Mayank Deshpande, robotics, software engineer, computer vision, perception, AI, autonomous systems, robotics software developer, machine learning engineer, portfolio',
+    author: 'Mayank Deshpande',
+    lang: 'en',
+    headline: 'Robotics Software Engineer specializing in Computer Vision and AI',
+    github: 'https://github.com/MayankD409',
+    linkedin: 'https://www.linkedin.com/in/mayank-deshpande',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,21 +21,98 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({site}) => site.siteMetadata.siteUrl,
+        resolvePages: ({allSitePage: {nodes: allPages}}) => {
+          return allPages.map(page => {
+            return {
+              ...page,
+              // Add priority and changefreq for important pages
+              priority: page.path === '/' ? 1.0 : 
+                      (page.path.includes('/projects/') || page.path.includes('/blog/')) ? 0.8 : 0.5,
+              changefreq: page.path === '/' ? 'weekly' : 
+                      (page.path.includes('/projects/') || page.path.includes('/blog/')) ? 'monthly' : 'yearly'
+            }
+          })
+        },
+        serialize: ({path, priority, changefreq}) => {
+          return {
+            url: path,
+            priority,
+            changefreq,
+          }
+        },
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://mayankd.me',
+        sitemap: 'https://mayankd.me/sitemap/sitemap-index.xml',
+        policy: [
+          { userAgent: '*', allow: '/' },
+          { userAgent: '*', disallow: ['/404'] }
+        ],
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+          },
+          production: {
+            policy: [
+              { userAgent: '*', allow: '/' },
+              { userAgent: '*', disallow: ['/404'] }
+            ],
+          },
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Mayank Deshpande', // Updated from 'Brittany Chiang'
-        short_name: 'MayankD', // Updated from 'Brittany Chiang' and shortened
+        name: 'Mayank Deshpande - Robotics Software Engineer', 
+        short_name: 'MayankD',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
-        display: 'standalone', // Changed to 'standalone' for better PWA experience
-        icon: 'src/images/Fistbump.png', // Ensure this path is correct
-        // Adding additional manifest options for better PWA support
-        crossOrigin: `use-credentials`, // Defaults to undefined
-        // Optionally, you can add icons array if you have multiple icon sizes
+        display: 'standalone',
+        icon: 'src/images/Fistbump.png',
+        crossOrigin: `use-credentials`,
+        description: 'Mayank Deshpande is a Robotics Software Engineer with expertise in Computer Vision, Perception and AI.',
+        lang: 'en',
+        categories: ['portfolio', 'technology', 'engineering', 'robotics'],
+        shortcuts: [
+          {
+            name: 'About',
+            url: '/#about',
+            description: 'Learn more about Mayank Deshpande'
+          },
+          {
+            name: 'Projects',
+            url: '/#projects',
+            description: 'View Mayank\'s projects'
+          },
+          {
+            name: 'Contact',
+            url: '/#contact',
+            description: 'Get in touch with Mayank'
+          }
+        ],
       },
     },
     `gatsby-plugin-offline`,
@@ -163,6 +246,8 @@ module.exports = {
         gtagConfig: {
           anonymize_ip: true,
           cookie_expires: 0,
+          send_page_view: true,
+          optimization_id: '',
         },
         // This object is used for configuration specific to this plugin
         pluginConfig: {

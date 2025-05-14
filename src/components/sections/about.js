@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { Helmet } from 'react-helmet';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -142,44 +143,44 @@ const About = () => {
   const skills = ['Languages: Python, C, C++, MATLAB', 'Libraries and Tools: OpenCV, ROS, MATLAB, TensorFlow, PyTorch, Git, Arduino, bash, CUDA, gtest, Qt, Fusion 360, Solidworks, Ultimaker Cura', 'Development Platforms: Linux (Ubuntu), Embedded robotics, Gazebo, AirSim, CARLA, CarSim, SUMO, MoveIt'];
 
   return (
-    <StyledAboutSection id="about" ref={revealContainer}>
+    <StyledAboutSection id="about" ref={revealContainer} itemScope itemType="https://schema.org/Person">
+      <Helmet>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Mayank Deshpande",
+              "jobTitle": "Robotics Software Engineer",
+              "description": "Robotics Software Engineer with expertise in Computer Vision, Perception and AI",
+              "knowsAbout": ["Robotics", "Computer Vision", "AI", "Perception", "Multimodal Foundation Models", "Agentic AI"],
+              "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Master's degree in Robotics"
+              },
+              "skills": ["Python", "C++", "C", "OpenCV", "ROS", "TensorFlow", "PyTorch", "CUDA"]
+            }
+          `}
+        </script>
+      </Helmet>
+      
       <h2 className="numbered-heading">About Me</h2>
 
       <div className="inner">
         <StyledText>
           <div>
-          <p>
-            I absolutely love talking <strong>Football, Finance, and Startups</strong>—and honestly, I think the life would’ve been way more exciting if I was already working in one of these <em>(but hey, I'm getting there!)</em>.
-          </p>
+            <p itemProp="description">
+              I absolutely love talking <strong>Football, Finance, and Startups</strong>—and honestly, I think the life would've been way more exciting if I was already working in one of these <em>(but hey, I'm getting there!)</em>.
+            </p>
 
-          <p>
-            Something else I find really cool? <strong>Robots</strong>. I recently wrapped up my <strong>Master's degree in Robotics</strong>, where I spent countless hours diving into Controls, Perception, and way too much C++. But after taking a course on <strong>Multimodal Foundation Models</strong>, I got completely hooked and couldn't stop exploring them. Now, I've fully committed to diving deep into <strong>Multimodal Agentic AI</strong>. One thing I've realized along the way: it's incredibly valuable to master one area deeply before branching out—being able to claim mastery over a domain has so much cross-applicability <em>(Thank You, Kyle!)</em>
-          </p>
+            <p>
+              Something else I find really cool? <strong itemProp="knowsAbout">Robots</strong>. I recently wrapped up my <strong itemProp="alumniOf">Master's degree in Robotics</strong>, where I spent countless hours diving into Controls, <span itemProp="knowsAbout">Perception</span>, and way too much <span itemProp="knowsLanguage">C++</span>. But after taking a course on <strong itemProp="knowsAbout">Multimodal Foundation Models</strong>, I got completely hooked and couldn't stop exploring them. Now, I've fully committed to diving deep into <strong itemProp="knowsAbout">Multimodal Agentic AI</strong>. One thing I've realized along the way: it's incredibly valuable to master one area deeply before branching out—being able to claim mastery over a domain has so much cross-applicability <em>(Thank You, Kyle!)</em>
+            </p>
 
-          <p>
-            I’m excited for all the great conversations and adventures ahead as I keep exploring this fascinating journey!
-          </p>
-
-            {/* <p>
-              <strong>Technologies I’ve been working with recently:</strong>
-            </p> */}
+            <p>
+              I'm excited for all the great conversations and adventures ahead as I keep exploring this fascinating journey!
+            </p>
           </div>
-
-
-
-
-
-          {/* <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul> */}
-          {/* <ul className="skills-list">
-            <li><strong style={{color: 'var(--green)'}}>Programming Languages:</strong> Python, C++, C</li>
-            <li><strong style={{color: 'var(--green)'}}>AI/ML Libraries & Frameworks:</strong> PyTorch, OpenCV, Pandas, NumPy</li>
-            <li><strong style={{color: 'var(--green)'}}>Core AI/ML:</strong> Deep Learning (Transformers, CNNs, RNNs), Computer Vision, Reinforcement Learning, Model Evaluation & Validation, Multimodal Finetuning & Post-Training</li>
-            <li><strong style={{color: 'var(--green)'}}>Hardware Acceleration & Optimization:</strong> CUDA, TensorRT</li>
-            <li><strong style={{color: 'var(--green)'}}>MLOps, Platforms & Tools:</strong> Docker, Kubernetes, Git, GitHub Actions (CI/CD), Linux, Bash Scripting, AWS/GCP, Jira/Confluence</li>
-            <li><strong style={{color: 'var(--green)'}}>Testing:</strong> GoogleTest (gtest)</li>
-          </ul> */}
         </StyledText>
 
         <StyledPic>
@@ -190,7 +191,8 @@ const About = () => {
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="Mayank Deshpande - Robotics Software Engineer"
+              itemProp="image"
             />
           </div>
         </StyledPic>

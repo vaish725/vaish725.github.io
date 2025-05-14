@@ -1,0 +1,26 @@
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Provide sitemap location
+Sitemap: https://mayankd.me/sitemap/sitemap-index.xml
+
+# Disallow certain private or unnecessary paths
+Disallow: /404
+Disallow: /404.html
+
+# Specifically allowing key pages for emphasis
+Allow: /index.html
+Allow: /blog
+Allow: /projects
+Allow: /archive
+
+# Allow Google and Bing bots full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# This ensures search engines can efficiently crawl the site
+Crawl-delay: 1 

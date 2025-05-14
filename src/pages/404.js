@@ -1,12 +1,11 @@
 // VISITED AND VERIFIED
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
-import { Helmet } from 'react-helmet';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { navDelay } from '@utils';
-import { Layout } from '@components';
+import { Layout, Head } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledMainContainer = styled.main`
@@ -51,7 +50,10 @@ const NotFoundPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="Page Not Found" />
+      <Head 
+        title="Page Not Found | Mayank Deshpande" 
+        description="Page not found - Mayank Deshpande, Software Engineer specializing in Robotics and AI"
+      />
 
       {prefersReducedMotion ? (
         <>{content}</>
