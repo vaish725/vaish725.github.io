@@ -31,7 +31,7 @@ Multi-Agent Reinforcement Learning (MARL) extends the concepts of traditional RL
 
 ![Schematic of Multi-agent System](./images/multi-agent-system.png)
 
-*Schematic of Multi-agent System. It consists of an environment and multiple decision-making agents (shown as circles inside the environment). The agents can observe information about the environment and take actions to achieve their goals.*
+_Schematic of Multi-agent System. It consists of an environment and multiple decision-making agents (shown as circles inside the environment). The agents can observe information about the environment and take actions to achieve their goals._
 
 ## Markov Game (Stochastic Game)
 
@@ -39,7 +39,7 @@ MARL is often modeled as a Markov Game, an extension of the Markov Decision Proc
 
 ![MDP vs Markov Game](./images/mdp-vs-markov-game.png)
 
-*Illustration of the difference between a Markov Decision Process and a Markov Game. In (a) one agent and one environment are seen. The agent interacts with the environment by sending a tubule of actions and receiving one reward and the states of the environment. In (b) multiple agents and one environment are seen. The action space is split into i number of actions. Each agent receives a reward and the states of the environment.*
+_Illustration of the difference between a Markov Decision Process and a Markov Game. In (a) one agent and one environment are seen. The agent interacts with the environment by sending a tubule of actions and receiving one reward and the states of the environment. In (b) multiple agents and one environment are seen. The action space is split into i number of actions. Each agent receives a reward and the states of the environment._
 
 ## Joint Policy and Interaction
 
@@ -47,7 +47,7 @@ In MARL, each agent needs to account for the behaviors of other agents, which ma
 
 ![Agent Interaction](./images/agent-interaction.png)
 
-*A visualization for the interaction between agents in a multi-agent reinforcement learning environment with a focus on cooperation and competition at intersections.*
+_A visualization for the interaction between agents in a multi-agent reinforcement learning environment with a focus on cooperation and competition at intersections._
 
 # Exploration & Exploitation
 
@@ -71,7 +71,7 @@ The **Multi-Agent Advantage Actor-Critic (MA2C)** algorithm adapts the tradition
 
 ![MA2C Algorithm](./images/ma2c-algorithm.png)
 
-*MA2C Algorithm for MARL approach*
+_MA2C Algorithm for MARL approach_
 
 Initially, we set up parameters, states and policies for all agents. Each agent observes its local environment and uses a policy network to decide on the next action — such as changing a traffic light or adjusting speed — based on current observations and past experiences. Actions are taken to interact with the environment, and agents receive rewards that reflect the immediate impact on traffic flow, like reduced congestion or wait times. These experiences are stored in a memory buffer. Periodically, agents use the collected experiences to update their policy and value networks through the Advantage Actor-Critic (A2C) method, which optimizes their strategies by balancing exploration and exploitation. By continuously updating their policies and learning from the environment, the agents collaboratively improve traffic conditions over time without centralized control.
 
@@ -81,7 +81,7 @@ MAPPO operates by allowing each agent to interact with its local environment and
 
 ![MAPPO Representation](./images/mappo-representation.png)
 
-*A representation of MAPPO*
+_A representation of MAPPO_
 
 By incorporating a mechanism to limit the extent of policy updates, MAPPO ensures that agents make incremental improvements without destabilizing the learned behaviors of other agents. This is particularly important in traffic systems where the actions of one agent can significantly impact others. Through iterative learning and coordination, agents using MAPPO can adapt to dynamic traffic conditions, leading to a more harmonious and efficient traffic management system without the need for centralized control.
 
@@ -95,7 +95,7 @@ The paper introduces two approaches namely Central Training and Decentralized Ex
 
 ![CTDE and DTDE Visualization](./images/ctde-dtde.png)
 
-*The above figure makes it easy to visualize CTDE and DTDE. ([Ruiqi Zhang et al. (2024)](https://arxiv.org/html/2408.09675v1#S6))*
+_The above figure makes it easy to visualize CTDE and DTDE. ([Ruiqi Zhang et al. (2024)](https://arxiv.org/html/2408.09675v1#S6))_
 
 Some alternative algorithms that can also be applied to autonomous traffic management, though they may be more complex or condition-dependent are listed below:
 
@@ -107,7 +107,7 @@ The MADDPG algorithm begins with agents randomly exploring their actions, aided 
 
 ![MADDPG Algorithm](./images/maddpg-algorithm.png)
 
-*MADDPG Algorithm*
+_MADDPG Algorithm_
 
 One of the distinguishing features of MADDPG is its use of centralized training and decentralized execution. During training, the critic utilizes information from all agents, providing a more holistic view of the entire traffic network. However, during real-time execution, each agent makes decisions independently based on its learned policy. This balance of centralized and decentralized strategies makes MADDPG well-suited for highly dynamic traffic systems, where real-time coordination is crucial but direct communication between all agents may not be feasible. As agents continue to learn and refine their policies, MADDPG contributes to a coordinated approach to traffic management, reducing congestion and promoting smoother traffic movement across the system.
 
@@ -115,7 +115,7 @@ One of the distinguishing features of MADDPG is its use of centralized training 
 
 ![IA2C Algorithm](./images/ia2c-algorithm.png)
 
-*Independent Advantage Actor Critic Algorithm*
+_Independent Advantage Actor Critic Algorithm_
 
 This algorithm is an extension of the actor-critic method, where each agent learns independently but still benefits from the feedback of a critic to improve decision-making.
 

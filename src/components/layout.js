@@ -57,17 +57,20 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <Head />
-      
+
       {/* Additional site-wide metadata */}
       <Helmet>
         <meta name="author" content="Mayank Deshpande" />
         <meta name="generator" content="Gatsby" />
         <meta property="og:site_name" content="Mayank Deshpande" />
-        <link rel="author" href="https://mayankd.me" />
+        <link rel="author" href="https://vaishnavik.me" />
         <link rel="schema.dcterms" href="https://purl.org/dc/terms/" />
         <meta name="dcterms.creator" content="Mayank Deshpande" />
         <meta name="dcterms.title" content="Mayank Deshpande - Software Engineer" />
-        <meta name="dcterms.subject" content="Robotics, Software Engineer, Computer Vision, AI, Mayank Deshpande Portfolio" />
+        <meta
+          name="dcterms.subject"
+          content="Robotics, Software Engineer, Computer Vision, AI, Mayank Deshpande Portfolio"
+        />
         <meta name="dcterms.language" content="en" />
         <meta name="geo.region" content="US" />
       </Helmet>

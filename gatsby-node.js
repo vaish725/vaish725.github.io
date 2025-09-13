@@ -7,6 +7,33 @@
 const path = require('path');
 const _ = require('lodash');
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    
+    type Frontmatter {
+      title: String
+      date: Date @dateformat
+      cover: File @fileByRelativePath
+      tech: [String]
+      github: String
+      external: String
+      description: String
+      slug: String
+      tags: [String]
+      draft: Boolean
+      company: String
+      showInProjects: Boolean
+    }
+  `;
+  
+  createTypes(typeDefs);
+};
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve(`src/templates/post.js`);
@@ -17,7 +44,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
       postsRemark: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/posts/" } }
+        filter: { 
+          fileAbsolutePath: { regex: "/content/posts/" }
+          frontmatter: { slug: { ne: null } }
+        }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -29,7 +59,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
-      tagsGroup: allMarkdownRemark(limit: 2000) {
+      tagsGroup: allMarkdownRemark(
+        filter: { 
+          fileAbsolutePath: { regex: "/content/posts/" }
+          frontmatter: { tags: { ne: null } }
+        }
+        limit: 2000
+      ) {
         group(field: frontmatter___tags) {
           fieldValue
         }
@@ -43,7 +79,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  // Create post detail pages
+  // Create post detail pages for pensieve section
   const posts = result.data.postsRemark.edges;
 
   posts.forEach(({ node }) => {
@@ -54,9 +90,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         component: postTemplate,
         context: {},
       });
-    } 
-    // Create blog posts
-    else {
+    } else {
+      // Create blog posts
       createPage({
         path: node.frontmatter.slug,
         component: blogPostTemplate,
@@ -67,7 +102,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Extract tag data from query
   const tags = result.data.tagsGroup.group;
-  
+
   // Create regular pensieve tag pages
   tags.forEach(tag => {
     createPage({
@@ -77,7 +112,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         tag: tag.fieldValue,
       },
     });
-    
+
     // Create blog tag pages
     createPage({
       path: `/blog/tags/${_.kebabCase(tag.fieldValue)}/`,

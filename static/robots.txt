@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Provide sitemap location
-Sitemap: https://mayankd.me/sitemap/sitemap-index.xml
+Sitemap: https://vaishnavik.me/sitemap/sitemap-index.xml
 
 # Disallow certain private or unnecessary paths
 Disallow: /404

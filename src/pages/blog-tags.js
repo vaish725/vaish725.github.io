@@ -9,7 +9,7 @@ import { Layout } from '@components';
 const StyledTagsContainer = styled.main`
   max-width: 900px;
   margin: 0 auto;
-  
+
   header {
     margin-bottom: 50px;
     text-align: center;
@@ -35,25 +35,25 @@ const StyledTag = styled.li`
     background-color: var(--light-navy);
     border-radius: var(--border-radius);
     transition: var(--transition);
-    
+
     &:hover,
     &:focus {
       transform: translateY(-5px);
       background-color: var(--light-navy);
     }
   }
-  
+
   h3 {
     margin: 0 0 10px;
     color: var(--green);
     font-size: var(--fz-lg);
-    
+
     &:before {
       content: '#';
       margin-right: 2px;
     }
   }
-  
+
   .tag-count {
     color: var(--light-slate);
     font-family: var(--font-mono);
@@ -73,7 +73,7 @@ const BlogTagsPage = ({ data, location }) => {
           <span className="arrow">&larr;</span>
           <Link to="/blog">All blog posts</Link>
         </span>
-        
+
         <header>
           <h1 className="big-heading">Tags</h1>
         </header>
@@ -83,7 +83,9 @@ const BlogTagsPage = ({ data, location }) => {
             <StyledTag key={tag.fieldValue}>
               <Link to={`/blog/tags/${kebabCase(tag.fieldValue)}/`}>
                 <h3>{tag.fieldValue}</h3>
-                <span className="tag-count">{tag.totalCount} post{tag.totalCount === 1 ? '' : 's'}</span>
+                <span className="tag-count">
+                  {tag.totalCount} post{tag.totalCount === 1 ? '' : 's'}
+                </span>
               </Link>
             </StyledTag>
           ))}
@@ -100,7 +102,7 @@ BlogTagsPage.propTypes = {
         PropTypes.shape({
           fieldValue: PropTypes.string.isRequired,
           totalCount: PropTypes.number.isRequired,
-        }).isRequired
+        }).isRequired,
       ),
     }),
   }),
@@ -123,4 +125,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`; 
+`;

@@ -12,8 +12,7 @@ const IconLoader = () => (
         dominantBaseline="middle"
         fontSize="50"
         fontWeight="bold"
-        fill="currentColor"
-      >
+        fill="currentColor">
         M
       </text>
       <path

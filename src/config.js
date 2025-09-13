@@ -1,29 +1,29 @@
 // VISITED BUT PLAY AROUND WITH THIS
 
 module.exports = {
-  email: 'msdeshp4@umd.edu',
+  email: 'v.kamdi@gwu.edu',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/MayankD409',
+      url: 'https://github.com/vaish725',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/_mayankdeshpande_/',
+      url: 'https://www.instagram.com/vaishkx725/',
     },
-    {
-      name: 'Twitter',
-      url: 'https://x.com/Mayank_D04',
-    },
+    // {
+    //   name: 'Twitter',
+    //   url: 'https://x.com/Mayank_D04',
+    // },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/msdeshpande04/',
+      url: 'https://www.linkedin.com/in/vaishnavi-kamdi/',
     },
-    {
-      name: 'Medium',
-      url: 'https://medium.com/@deshpandemayank5', //remove this
-    },
+    // {
+    //   name: 'Medium',
+    //   url: 'https://medium.com/@deshpandemayank5', //remove this
+    // },
   ],
 
   navLinks: [
@@ -44,8 +44,8 @@ module.exports = {
       url: '/#publications',
     },
     {
-      name: 'Blog',
-      url: '/blog',
+      name: 'Leadership Experience',
+      url: '/leadership',
     },
     {
       name: 'Contact',

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { email } from '@config';
+// import { email } from '@config';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -62,26 +62,24 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Mayank Deshpande.</h2>;
+  const one = <h1 className="big-heading">Hi, my name is</h1>;
+  const two = <h2 className="big-heading">Vaishnavi Kamdi.</h2>;
   const three = <h3 className="big-heading">I love to build Software</h3>;
   const four = (
     <>
       <p>
-        I'm on an <strong>upskilling journey</strong> to master <strong>AI</strong>, pushing boundaries everyday to explore the edge of the fractal.
+        I'm an <strong>M.S. in Computer Science</strong> student at{' '}
+        <strong>The George Washington University</strong>.
       </p>
 
       <p>
-        My expertise spans across <strong>NLP</strong>, <strong>Robotics (Controls, C++ dev)</strong>, and <strong>deploying</strong> <strong>Multimodal AI</strong> systems, all while crafting something innovative along the way.
+        My experience spans across{' '}
+        <strong>architecting cloud solutions (AWS), developing agentic AI workflows</strong> and{' '}
+        <strong>building end-to-end machine learning pipelines</strong>. I’m driven by a passion for
+        strategy and a belief that the best work comes from <i>collaboration</i>.
       </p>
 
-      <p>
-        Always looking to work on exciting projects—feel free to{' '}
-        <a href="#contact">
-          reach out
-        </a>
-        {' '}if you'd like to build something amazing together!
-      </p>
+      <p>Always looking for the next challenge — let's connect! 👋</p>
     </>
   );
   const five = (

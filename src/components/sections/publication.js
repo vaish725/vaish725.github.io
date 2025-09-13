@@ -107,12 +107,12 @@ const Publications = () => {
   // List of Publications
   const publications = [
     {
-      title: 'Behavioral Analysis of ROS motion planners integrated with Robotics Middleware Framework (RMF)',
-      link: 'https://ieeexplore.ieee.org/document/9989028',
+      title: 'A Novel Approach to Automatic Identification and Detection of Aquatic Animal Species',
+      link: 'https://ijngc.perpetualinnovation.net/index.php/ijngc/article/view/1013',
       year: '2022',
-      publisher: 'IEEE',
+      publisher: 'ICIDC',
       description:
-        'This paper evaluates the integration of the Robotics Middleware Framework (RMF) with Free Fleet, analyzing the performance of different path planning algorithms in multi-robot scenarios to enhance autonomous mobile robot fleet management.',
+        'This paper presents a YOLOv5n-based lightweight object detection approach for identifying single and multiple aquatic animal species in images, with deployment on web and mobile applications to enable accessible, real-time monitoring in fisheries.',
     },
     // Add more publications here as needed
     // {
@@ -153,8 +153,7 @@ const Publications = () => {
           <li
             className="publication-item"
             key={index}
-            ref={(el) => (revealPublications.current[index] = el)}
-          >
+            ref={el => (revealPublications.current[index] = el)}>
             <div className="publication-header">
               <div className="publication-title">
                 <a href={pub.link} target="_blank" rel="noopener noreferrer">
@@ -162,7 +161,7 @@ const Publications = () => {
                 </a>
               </div>
               <div className="publication-meta">
-                {pub.year} | {' '}
+                {pub.year} |{' '}
                 <a href={pub.link} target="_blank" rel="noopener noreferrer">
                   {pub.publisher}
                 </a>

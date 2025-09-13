@@ -13,7 +13,7 @@ RewriteRule ^(.*)/$ /$1 [L,R=301]
 
 # Handle www to non-www redirection
 RewriteCond %{HTTP_HOST} ^www\.mayankd\.me [NC]
-RewriteRule ^(.*)$ https://mayankd.me/$1 [L,R=301]
+RewriteRule ^(.*)$ https://vaishnavik.me/$1 [L,R=301]
 
 # Speed optimizations
 <IfModule mod_expires.c>

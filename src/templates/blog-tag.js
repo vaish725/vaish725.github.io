@@ -10,7 +10,7 @@ import { IconBookmark } from '@components/icons';
 const StyledTagContainer = styled.main`
   max-width: 1200px;
   margin: 0 auto;
-  
+
   & > header {
     margin-bottom: 50px;
     text-align: center;
@@ -127,7 +127,7 @@ const StyledBackLink = styled(Link)`
   color: var(--green);
   font-family: var(--font-mono);
   font-size: var(--fz-sm);
-  
+
   &:before {
     content: '←';
     margin-right: 5px;
@@ -149,7 +149,7 @@ const BlogTagTemplate = ({ pageContext, data, location }) => {
           <span className="arrow">&larr;</span>
           <Link to="/blog">All blog posts</Link>
         </span>
-        
+
         <header>
           <h1 className="medium-heading">#{tag}</h1>
           <p className="subtitle">{tagHeader}</p>
@@ -159,7 +159,7 @@ const BlogTagTemplate = ({ pageContext, data, location }) => {
           {posts.map(({ node }) => {
             const { slug, title, date, description } = node.frontmatter;
             const formattedDate = new Date(date).toLocaleDateString();
-            
+
             return (
               <StyledPost key={slug}>
                 <div className="post__inner">
@@ -177,7 +177,7 @@ const BlogTagTemplate = ({ pageContext, data, location }) => {
                     </div>
                     <p className="post__desc">{description}</p>
                   </header>
-                  
+
                   <div className="post__footer">
                     <Link to={`/blog/tags/${kebabCase(tag)}/`} className="inline-link">
                       #{tag}
@@ -210,7 +210,7 @@ BlogTagTemplate.propTypes = {
               description: PropTypes.string.isRequired,
             }),
           }),
-        }).isRequired
+        }).isRequired,
       ),
     }),
   }),
@@ -220,12 +220,12 @@ BlogTagTemplate.propTypes = {
 export default BlogTagTemplate;
 
 export const pageQuery = graphql`
-  query($tag: String!) {
+  query ($tag: String!) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { 
-        frontmatter: { tags: { in: [$tag] }, draft: { ne: true } },
+      filter: {
+        frontmatter: { tags: { in: [$tag] }, draft: { ne: true } }
         fileAbsolutePath: { regex: "/content/posts/" }
       }
     ) {
@@ -242,4 +242,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`; 
+`;

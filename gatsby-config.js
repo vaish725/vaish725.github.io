@@ -2,18 +2,19 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Mayank Deshpande',
+    title: 'Vaishnavi K',
     description:
-      'Mayank Deshpande is a Robotics Software Engineer with expertise in Computer Vision, Perception and AI. Specializing in autonomous systems, robotics software development, and advanced perception algorithms.',
-    siteUrl: 'https://mayankd.me', // No trailing slash allowed!
+      'Vaishnavi K is a passionate developer and technology enthusiast. Specializing in web development, software engineering, and creating innovative digital solutions.',
+    siteUrl: 'https://vaishnavik.me', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@Mayank_D04',
-    keywords: 'Mayank Deshpande, robotics, software engineer, computer vision, perception, AI, autonomous systems, robotics software developer, machine learning engineer, portfolio',
-    author: 'Mayank Deshpande',
+    twitterUsername: '@vaishnavik', // Update this with your actual Twitter handle
+    keywords:
+      'Vaishnavi K, software engineer, web developer, technology, portfolio, developer, programming',
+    author: 'Vaishnavi K',
     lang: 'en',
-    headline: 'Robotics Software Engineer specializing in Computer Vision and AI',
-    github: 'https://github.com/MayankD409',
-    linkedin: 'https://www.linkedin.com/in/mayank-deshpande',
+    headline: 'Software Engineer and Technology Enthusiast',
+    github: 'https://github.com/vaishnavik', // Update this with your actual GitHub username
+    linkedin: 'https://www.linkedin.com/in/vaishnavik', // Update this with your actual LinkedIn profile
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -38,36 +39,39 @@ module.exports = {
             }
           }
         `,
-        resolveSiteUrl: ({site}) => site.siteMetadata.siteUrl,
-        resolvePages: ({allSitePage: {nodes: allPages}}) => {
-          return allPages.map(page => {
-            return {
-              ...page,
-              // Add priority and changefreq for important pages
-              priority: page.path === '/' ? 1.0 : 
-                      (page.path.includes('/projects/') || page.path.includes('/blog/')) ? 0.8 : 0.5,
-              changefreq: page.path === '/' ? 'weekly' : 
-                      (page.path.includes('/projects/') || page.path.includes('/blog/')) ? 'monthly' : 'yearly'
-            }
-          })
-        },
-        serialize: ({path, priority, changefreq}) => {
-          return {
-            url: path,
-            priority,
-            changefreq,
-          }
-        },
-      }
+        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) =>
+          allPages.map(page => ({
+            ...page,
+            // Add priority and changefreq for important pages
+            priority:
+              page.path === '/'
+                ? 1.0
+                : page.path.includes('/projects/') || page.path.includes('/blog/')
+                  ? 0.8
+                  : 0.5,
+            changefreq:
+              page.path === '/'
+                ? 'weekly'
+                : page.path.includes('/projects/') || page.path.includes('/blog/')
+                  ? 'monthly'
+                  : 'yearly',
+          })),
+        serialize: ({ path, priority, changefreq }) => ({
+          url: path,
+          priority,
+          changefreq,
+        }),
+      },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://mayankd.me',
-        sitemap: 'https://mayankd.me/sitemap/sitemap-index.xml',
+        host: 'https://vaishnavik.me',
+        sitemap: 'https://vaishnavik.me/sitemap/sitemap-index.xml',
         policy: [
           { userAgent: '*', allow: '/' },
-          { userAgent: '*', disallow: ['/404'] }
+          { userAgent: '*', disallow: ['/404'] },
         ],
         env: {
           development: {
@@ -76,7 +80,7 @@ module.exports = {
           production: {
             policy: [
               { userAgent: '*', allow: '/' },
-              { userAgent: '*', disallow: ['/404'] }
+              { userAgent: '*', disallow: ['/404'] },
             ],
           },
         },
@@ -85,7 +89,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Mayank Deshpande - Robotics Software Engineer', 
+        name: 'Mayank Deshpande - Robotics Software Engineer',
         short_name: 'MayankD',
         start_url: '/',
         background_color: config.colors.darkNavy,
@@ -93,25 +97,26 @@ module.exports = {
         display: 'standalone',
         icon: 'src/images/Fistbump.png',
         crossOrigin: `use-credentials`,
-        description: 'Mayank Deshpande is a Robotics Software Engineer with expertise in Computer Vision, Perception and AI.',
+        description:
+          'Mayank Deshpande is a Robotics Software Engineer with expertise in Computer Vision, Perception and AI.',
         lang: 'en',
         categories: ['portfolio', 'technology', 'engineering', 'robotics'],
         shortcuts: [
           {
             name: 'About',
             url: '/#about',
-            description: 'Learn more about Mayank Deshpande'
+            description: 'Learn more about Mayank Deshpande',
           },
           {
             name: 'Projects',
             url: '/#projects',
-            description: 'View Mayank\'s projects'
+            description: 'View Mayank\'s projects',
           },
           {
             name: 'Contact',
             url: '/#contact',
-            description: 'Get in touch with Mayank'
-          }
+            description: 'Get in touch with Mayank',
+          },
         ],
       },
     },
@@ -128,6 +133,13 @@ module.exports = {
       options: {
         name: 'content',
         path: `${__dirname}/content/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `leadership`,
+        path: `${__dirname}/content/leadership`,
       },
     },
     {

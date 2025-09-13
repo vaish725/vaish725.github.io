@@ -50,8 +50,8 @@ const NotFoundPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <Head 
-        title="Page Not Found | Mayank Deshpande" 
+      <Head
+        title="Page Not Found | Mayank Deshpande"
         description="Page not found - Mayank Deshpande, Software Engineer specializing in Robotics and AI"
       />
 

@@ -3,12 +3,12 @@
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://mayankd.me/#person",
+      "@id": "https://vaishnavik.me/#person",
       "name": "Mayank Deshpande",
       "givenName": "Mayank",
       "familyName": "Deshpande",
-      "url": "https://mayankd.me",
-      "image": "https://mayankd.me/og.png",
+      "url": "https://vaishnavik.me",
+      "image": "https://vaishnavik.me/og.png",
       "jobTitle": "Robotics Software Engineer",
       "description": "Software Engineer with expertise in Robotics and AI",
       "sameAs": [
@@ -26,12 +26,7 @@
         "Multimodal Foundation Models",
         "Agentic AI"
       ],
-      "knowsLanguage": [
-        "Python",
-        "C++",
-        "C",
-        "MATLAB"
-      ],
+      "knowsLanguage": ["Python", "C++", "C", "MATLAB"],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Master's degree in Robotics"
@@ -43,51 +38,51 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://mayankd.me/#website",
-      "url": "https://mayankd.me",
+      "@id": "https://vaishnavik.me/#website",
+      "url": "https://vaishnavik.me",
       "name": "Mayank Deshpande - Software Engineer",
       "description": "Personal website and portfolio of Mayank Deshpande, a Software Engineer specializing in Robotics and AI.",
       "publisher": {
-        "@id": "https://mayankd.me/#person"
+        "@id": "https://vaishnavik.me/#person"
       },
       "inLanguage": "en",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://mayankd.me/?s={search_term_string}",
+        "target": "https://vaishnavik.me/?s={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://mayankd.me/#webpage",
-      "url": "https://mayankd.me",
+      "@id": "https://vaishnavik.me/#webpage",
+      "url": "https://vaishnavik.me",
       "name": "Mayank Deshpande - Software Engineer Portfolio",
       "isPartOf": {
-        "@id": "https://mayankd.me/#website"
+        "@id": "https://vaishnavik.me/#website"
       },
       "about": {
-        "@id": "https://mayankd.me/#person"
+        "@id": "https://vaishnavik.me/#person"
       },
       "description": "Personal website and portfolio of Mayank Deshpande, showcasing expertise in Robotics, Computer Vision, and AI.",
       "inLanguage": "en",
       "mainEntity": {
-        "@id": "https://mayankd.me/#person"
+        "@id": "https://vaishnavik.me/#person"
       }
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://mayankd.me/#profilepage",
-      "url": "https://mayankd.me",
+      "@id": "https://vaishnavik.me/#profilepage",
+      "url": "https://vaishnavik.me",
       "name": "Mayank Deshpande - Professional Profile",
       "isPartOf": {
-        "@id": "https://mayankd.me/#website"
+        "@id": "https://vaishnavik.me/#website"
       },
       "about": {
-        "@id": "https://mayankd.me/#person"
+        "@id": "https://vaishnavik.me/#person"
       },
       "mainEntity": {
-        "@id": "https://mayankd.me/#person"
+        "@id": "https://vaishnavik.me/#person"
       }
     }
   ]
-} 
+}

@@ -41,11 +41,11 @@ const StyledProject = styled.li`
 
   &:nth-of-type(odd) {
     .project-content {
-      grid-column: 7 / -1;
+      grid-column: 8 / -1;
       text-align: right;
 
       @media (max-width: 1080px) {
-        grid-column: 5 / -1;
+        grid-column: 6 / -1;
       }
       @media (max-width: 768px) {
         grid-column: 1 / -1;
@@ -93,11 +93,11 @@ const StyledProject = styled.li`
 
   .project-content {
     position: relative;
-    grid-column: 1 / 7;
+    grid-column: 1 / 6;
     grid-row: 1 / -1;
 
     @media (max-width: 1080px) {
-      grid-column: 1 / 9;
+      grid-column: 1 / 8;
     }
 
     @media (max-width: 768px) {
@@ -242,6 +242,7 @@ const StyledProject = styled.li`
     grid-row: 1 / -1;
     position: relative;
     z-index: 1;
+    border-radius: var(--border-radius); /* Ensure container also has matching border-radius */
 
     @media (max-width: 768px) {
       grid-column: 1 / -1;
@@ -252,8 +253,8 @@ const StyledProject = styled.li`
     a {
       width: 100%;
       height: 100%;
-      background-color: var(--green);
-      border-radius: var(--border-radius);
+      background-color: transparent; /* Remove background color to prevent tinting */
+      border-radius: var(--border-radius); /* Match the text description block border-radius */
       vertical-align: middle;
 
       &:hover,
@@ -265,7 +266,7 @@ const StyledProject = styled.li`
         .img {
           background: transparent;
           filter: none;
-          opacity: 1; /* Restore full opacity on hover *
+          opacity: 1; /* Restore full opacity on hover */
         }
       }
 
@@ -280,22 +281,22 @@ const StyledProject = styled.li`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
-
+        background-color: transparent; /* Fully transparent by default - image shows at 100% visibility */
+        border-radius: var(
+          --border-radius
+        ); /* IMPORTANT: Add border-radius to overlay to prevent sharp edges */
       }
     }
 
     .img {
-      border-radius: var(--border-radius);
+      border-radius: var(--border-radius); /* Match the text description block border-radius */
 
-      filter: grayscale(100%) contrast(1) brightness(90%);
-      opacity: 0.6; /* Set initial opacity to make it transparent */
+      /* Removed all filters and opacity to show natural, normal image colors */
 
       @media (max-width: 768px) {
         object-fit: cover;
         width: auto;
         height: 100%;
-        filter: grayscale(100%) contrast(1) brightness(50%);
       }
     }
   }

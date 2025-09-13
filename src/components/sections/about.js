@@ -99,6 +99,8 @@ const StyledPic = styled.div`
       // mix-blend-mode: multiply; // Adds bluish tint to the picture
       // filter: grayscale(100%) contrast(1); // Makes image grayscale pre-hover
       transition: var(--transition);
+      object-fit: cover;
+      object-position: 60% center;
     }
 
     &:before,
@@ -140,10 +142,19 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Languages: Python, C, C++, MATLAB', 'Libraries and Tools: OpenCV, ROS, MATLAB, TensorFlow, PyTorch, Git, Arduino, bash, CUDA, gtest, Qt, Fusion 360, Solidworks, Ultimaker Cura', 'Development Platforms: Linux (Ubuntu), Embedded robotics, Gazebo, AirSim, CARLA, CarSim, SUMO, MoveIt'];
+  const skills = [
+    'Languages: Python, C/C++, Java, nodeJS, Swift, SQL, JavaScript, HTML/CSS',
+    'Libraries/Frameworks: TensorFlow, PyTorch, PySpark, A/B Testing, OpenCV, FastAPI, React Native, pandas, NumPy, Scikit-learn, Streamlit',
+    'Tools & Technologies:AWS, GCP, Docker, Git, Linux, MongoDB, PostgreSQL, Tableau',
+    'Areas of Expertise: Software Development, Machine Learning, Deep Learning, Data Mining, Cloud Computing',
+  ];
 
   return (
-    <StyledAboutSection id="about" ref={revealContainer} itemScope itemType="https://schema.org/Person">
+    <StyledAboutSection
+      id="about"
+      ref={revealContainer}
+      itemScope
+      itemType="https://schema.org/Person">
       <Helmet>
         <script type="application/ld+json">
           {`
@@ -156,30 +167,57 @@ const About = () => {
               "knowsAbout": ["Robotics", "Computer Vision", "AI", "Perception", "Multimodal Foundation Models", "Agentic AI"],
               "alumniOf": {
                 "@type": "CollegeOrUniversity",
-                "name": "Master's degree in Robotics"
+                "name": "Master's degree in Computer Science"
               },
               "skills": ["Python", "C++", "C", "OpenCV", "ROS", "TensorFlow", "PyTorch", "CUDA"]
             }
           `}
         </script>
       </Helmet>
-      
+
       <h2 className="numbered-heading">About Me</h2>
 
       <div className="inner">
         <StyledText>
           <div>
             <p itemProp="description">
-              I absolutely love talking <strong>Football, Finance, and Startups</strong>—and honestly, I think the life would've been way more exciting if I was already working in one of these <em>(but hey, I'm getting there!)</em>.
+              Hello there, I'm Vaishnavi. Welcome to <i>my little corner of the internet!</i>✨
+            </p>
+            <p>
+              I'm a <strong>Master's student in Computer Science</strong> at{' '}
+              <strong>The George Washington University</strong>. I'm passionate about building cool
+              things with code, exploring the latest in tech, and connecting with people.
             </p>
 
             <p>
-              Something else I find really cool? <strong itemProp="knowsAbout">Robots</strong>. I recently wrapped up my <strong itemProp="alumniOf">Master's degree in Robotics</strong>, where I spent countless hours diving into Controls, <span itemProp="knowsAbout">Perception</span>, and way too much <span itemProp="knowsLanguage">C++</span>. But after taking a course on <strong itemProp="knowsAbout">Multimodal Foundation Models</strong>, I got completely hooked and couldn't stop exploring them. Now, I've fully committed to diving deep into <strong itemProp="knowsAbout">Multimodal Agentic AI</strong>. One thing I've realized along the way: it's incredibly valuable to master one area deeply before branching out—being able to claim mastery over a domain has so much cross-applicability <em>(Thank You, Kyle!)</em>
+              But life's too short to be all about the ones and zeros. I'm a{' '}
+              <strong>people person</strong> through and through and an unapologetic enthusiast for
+              a few things that bring me immense joy. I'm a huge{' '}
+              <strong>stationery aficionado</strong> — right now, I'm completely <i>geeking out</i>{' '}
+              over the Pilot Kakuno fountain pens❤️ It’s safe to say my idea of a 'must-have' item
+              is a little different, as you'll always find me <i>chasing the high</i> of a perfectly
+              crafted notebook and pen.
             </p>
 
             <p>
-              I'm excited for all the great conversations and adventures ahead as I keep exploring this fascinating journey!
+              On a challenging day, you'll likely find me online, strategizing my way to victory in
+              a game of <i>Catan</i>. That sweet victory is the perfect{' '}
+              <strong>mood-booster!</strong> I'm a firm believer in balancing hard work with things
+              that make you happy, which for me also includes a healthy dose of<i> Modern Family</i>
+              !
             </p>
+
+            <p>
+              I love a good <strong>strategy</strong>, whether it's for a new software project or my
+              next move in <i>Catan</i>. If you're passionate about building cool things and want to
+              collaborate, I'd love to hear from you!👋🏻
+            </p>
+
+            <p>Here are a few technologies I've been working with recently:</p>
+
+            <ul className="skills-list">
+              {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul>
           </div>
         </StyledText>
 
@@ -187,11 +225,12 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/cali_zoomed.jpeg" //either me.jpg or ups-shot.jpg
+              src="../../images/about-me-monterey-beach.jpg" //either me.jpg or ups-shot.jpg
               width={500}
+              height={800}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Mayank Deshpande - Robotics Software Engineer"
+              alt="Vaishnavi Kamdi - Software Engineer"
               itemProp="image"
             />
           </div>
