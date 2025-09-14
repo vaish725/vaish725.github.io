@@ -225,7 +225,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg" //either me.jpg or ups-shot.jpg
+              src="../../images/about-me-monterey-beach.jpg" //either me.jpg or ups-shot.jpg
               width={500}
               height={800}
               quality={95}
