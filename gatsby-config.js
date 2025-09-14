@@ -45,7 +45,7 @@ module.exports = {
         background_color: `#0a192f`,
         theme_color: `#0a192f`,
         display: `minimal-ui`,
-        // icon: `src/images/logo.png`, // Temporarily disabled
+        icon: `static/og.png`, // Temporary fix using og image
       },
     },
   ],
