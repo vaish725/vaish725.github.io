@@ -3,8 +3,11 @@
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
-    siteUrl: config.siteUrl,
     description: config.siteDescription,
+    siteUrl: config.siteUrl,
+    image: config.ogImage,
+    twitterUsername: config.twitterHandle,
+    author: config.name,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

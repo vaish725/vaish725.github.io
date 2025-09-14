@@ -1,6 +1,11 @@
-// VISITED BUT PLAY AROUND WITH THIS
-
 module.exports = {
+  name: 'Vaishnavi Kamdi',
+  siteTitle: 'Vaishnavi Kamdi',
+  siteDescription: 'Vaishnavi Kamdi is a software engineer specializing in Machine Learning, MLOps, and full-stack development.',
+  siteUrl: 'https://vaishnavik.me',
+  ogImage: '/og.png',
+  twitterHandle: '@vaishnavik',
+  
   email: 'v.kamdi@gwu.edu',
 
   socialMedia: [
@@ -12,18 +17,10 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/vaishkx725/',
     },
-    // {
-    //   name: 'Twitter',
-    //   url: 'https://x.com/Mayank_D04',
-    // },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/vaishnavi-kamdi/',
     },
-    // {
-    //   name: 'Medium',
-    //   url: 'https://medium.com/@deshpandemayank5', //remove this
-    // },
   ],
 
   navLinks: [
