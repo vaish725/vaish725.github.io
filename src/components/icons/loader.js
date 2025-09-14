@@ -13,7 +13,7 @@ const IconLoader = () => (
         fontSize="50"
         fontWeight="bold"
         fill="currentColor">
-        M
+        V
       </text>
       <path
         stroke="currentColor"
