@@ -161,15 +161,15 @@ const About = () => {
             {
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Mayank Deshpande",
-              "jobTitle": "Robotics Software Engineer",
-              "description": "Robotics Software Engineer with expertise in Computer Vision, Perception and AI",
-              "knowsAbout": ["Robotics", "Computer Vision", "AI", "Perception", "Multimodal Foundation Models", "Agentic AI"],
+              "name": "Vaishnavi Kamdi",
+              "jobTitle": "Software Engineer",
+              "description": "Software Engineer with expertise in Machine Learning, MLOps, and full-stack development",
+              "knowsAbout": ["Machine Learning", "MLOps", "Full-stack Development", "Cloud Computing", "AI", "Data Science"],
               "alumniOf": {
                 "@type": "CollegeOrUniversity",
                 "name": "Master's degree in Computer Science"
               },
-              "skills": ["Python", "C++", "C", "OpenCV", "ROS", "TensorFlow", "PyTorch", "CUDA"]
+              "skills": ["Python", "C++", "Java", "JavaScript", "React", "Node.js", "TensorFlow", "PyTorch", "AWS", "Docker"]
             }
           `}
         </script>
@@ -225,7 +225,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/about-me-monterey-beach.jpg" //either me.jpg or ups-shot.jpg
+              src="../../images/me.jpg" //either me.jpg or ups-shot.jpg
               width={500}
               height={800}
               quality={95}
