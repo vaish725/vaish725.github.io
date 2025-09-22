@@ -1,0 +1,16 @@
+/* SITE */
+Name: Vaishnavi Kamdi - Personal Portfolio
+URL: https://vaishnavik.me
+Description: Personal website of Vaishnavi Kamdi
+Keywords: Vaishnavi Kamdi, AI, Software engineer, Backend Developer
+Language: English
+Author: Vaishnavi Kamdi
+Contact: vaishnavi [at] domain.com
+LinkedIn: https://www.linkedin.com/in/vaishnavi-kamdi/
+GitHub: https://github.com/vaish725
+
+
+/* TECHNOLOGY */
+Built with: Gatsby, React, JavaScript
+Hosting: Netlify
+Last Updated: 2025-06 
