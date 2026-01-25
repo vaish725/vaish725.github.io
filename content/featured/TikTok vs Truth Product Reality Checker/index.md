@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '5'
 title: '“TikTok vs Truth”– Product Reality Checker'
 cover: './image.png'
 github: 'https://github.com/vaish725/unhyped.git'

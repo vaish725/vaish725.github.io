@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '4'
 title: 'EchoChambers-MLOps'
 github: 'https://github.com/vaish725/echochamber-mlops.git'
 cover: './image.png'
