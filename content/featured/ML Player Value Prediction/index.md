@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '6'
 title: 'Sports Analytics: Predicting Football Player Market Value & Injury Risk Probability'
 cover: './ml-player-value-prediction-main.png'
 github: 'https://github.com/vaish725/ml-player-value-prediction.git'
