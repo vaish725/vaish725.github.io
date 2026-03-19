@@ -4,7 +4,7 @@
     {
       "@type": "Person",
       "@id": "https://vaishnavik.me/#person",
-      "name": "Mayank Deshpande",
+      "name": "Vaishnavi Kamdi",
       "givenName": "Mayank",
       "familyName": "Deshpande",
       "url": "https://vaishnavik.me",
@@ -40,8 +40,8 @@
       "@type": "WebSite",
       "@id": "https://vaishnavik.me/#website",
       "url": "https://vaishnavik.me",
-      "name": "Mayank Deshpande - Software Engineer",
-      "description": "Personal website and portfolio of Mayank Deshpande, a Software Engineer specializing in Robotics and AI.",
+      "name": "Vaishnavi Kamdi - Software Engineer",
+      "description": "Personal website and portfolio of Vaishnavi Kamdi, a Software Engineer specializing in Machine Learning, MLOps, and full-stack development.",
       "publisher": {
         "@id": "https://vaishnavik.me/#person"
       },
@@ -56,14 +56,14 @@
       "@type": "WebPage",
       "@id": "https://vaishnavik.me/#webpage",
       "url": "https://vaishnavik.me",
-      "name": "Mayank Deshpande - Software Engineer Portfolio",
+      "name": "Vaishnavi Kamdi - Software Engineer Portfolio",
       "isPartOf": {
         "@id": "https://vaishnavik.me/#website"
       },
       "about": {
         "@id": "https://vaishnavik.me/#person"
       },
-      "description": "Personal website and portfolio of Mayank Deshpande, showcasing expertise in Robotics, Computer Vision, and AI.",
+      "description": "Personal website and portfolio of Vaishnavi Kamdi, showcasing expertise in Machine Learning, MLOps, and full-stack development.",
       "inLanguage": "en",
       "mainEntity": {
         "@id": "https://vaishnavik.me/#person"

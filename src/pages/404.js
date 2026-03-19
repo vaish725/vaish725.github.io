@@ -51,8 +51,8 @@ const NotFoundPage = ({ location }) => {
   return (
     <Layout location={location}>
       <Head
-        title="Page Not Found | Mayank Deshpande"
-        description="Page not found - Mayank Deshpande, Software Engineer specializing in Robotics and AI"
+        title="Page Not Found | Vaishnavi Kamdi"
+        description="Page not found - Vaishnavi Kamdi, Software Engineer specializing in Machine Learning, MLOps, and full-stack development."
       />
 
       {prefersReducedMotion ? (
