@@ -5,31 +5,28 @@
       "@type": "Person",
       "@id": "https://vaishnavik.me/#person",
       "name": "Vaishnavi Kamdi",
-      "givenName": "Mayank",
-      "familyName": "Deshpande",
+      "givenName": "Vaishnavi",
+      "familyName": "Kamdi",
       "url": "https://vaishnavik.me",
       "image": "https://vaishnavik.me/og.png",
-      "jobTitle": "Robotics Software Engineer",
-      "description": "Software Engineer with expertise in Robotics and AI",
+      "jobTitle": "Software Engineer",
+      "description": "Software Engineer specializing in Machine Learning, MLOps, and full-stack development.",
       "sameAs": [
-        "https://github.com/MayankD409",
-        "https://twitter.com/Mayank_D04",
-        "https://www.linkedin.com/in/mayank-deshpande"
+        "https://github.com/vaish725",
+        "https://www.linkedin.com/in/vaishnavi-kamdi/",
+        "https://www.instagram.com/vaishkx725/"
       ],
       "knowsAbout": [
-        "Robotics",
-        "Computer Vision",
-        "Perception",
-        "Artificial Intelligence",
         "Machine Learning",
-        "Deep Learning",
-        "Multimodal Foundation Models",
-        "Agentic AI"
+        "MLOps",
+        "Full-Stack Development",
+        "Artificial Intelligence",
+        "Deep Learning"
       ],
-      "knowsLanguage": ["Python", "C++", "C", "MATLAB"],
+      "knowsLanguage": ["Python", "JavaScript", "C++", "Java"],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
-        "name": "Master's degree in Robotics"
+        "name": "George Washington University"
       },
       "worksFor": {
         "@type": "Organization",
@@ -73,7 +70,7 @@
       "@type": "ProfilePage",
       "@id": "https://vaishnavik.me/#profilepage",
       "url": "https://vaishnavik.me",
-      "name": "Mayank Deshpande - Professional Profile",
+      "name": "Vaishnavi Kamdi - Professional Profile",
       "isPartOf": {
         "@id": "https://vaishnavik.me/#website"
       },

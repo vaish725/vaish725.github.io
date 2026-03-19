@@ -4,6 +4,7 @@ module.exports = {
     'Vaishnavi Kamdi is a software engineer specializing in Machine Learning, MLOps, and full-stack development.',
   siteUrl: 'https://vaishnavik.me',
   siteLanguage: 'en_US',
+  ogImage: '/og.png',
   name: 'Vaishnavi Kamdi',
   location: 'Washington D.C',
   email: 'v.kamdi@gwu.edu',
